@@ -87,7 +87,7 @@ export function JobPostModal({
     <Modal open={open} onOpenChange={onOpenChange}>
       <ModalContent className="max-w-md">
         <ModalHeader>
-          <ModalTitle className="text-center">Submit an AI job post</ModalTitle>
+          <ModalTitle className="text-center">Post a Job at We Work With AI</ModalTitle>
           <ModalDescription className="text-center">
             Add your information below, and we&apos;ll email you the next steps along with a PayPal invoice for $175.
           </ModalDescription>
