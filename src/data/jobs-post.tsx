@@ -5,6 +5,7 @@ export interface JobInterface {
   location: string;
   salary?: string;
   type: "Full-time" | "Part-time" | "Contract";
+  category: "Engineering" | "Design" | "Operations" | "Sales" | "Support" | "Research" | "Other";
   tags: string[];
   postedDate: string;
   description: string;
@@ -22,6 +23,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$180k - $350k",
     type: "Full-time",
+    category: "Engineering",
     tags: ["Python", "TensorFlow", "PyTorch", "ML"],
     postedDate: "2024-01-15",
     description: "Join our team building the future of AI systems at scale.",
@@ -41,6 +43,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$200k - $400k",
     type: "Part-time",
+    category: "Research",
     tags: ["Research", "NLP", "Safety", "Python"],
     postedDate: "2024-01-14",
     description: "Research and develop safe, beneficial AI systems.",
@@ -55,6 +58,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$160k - $280k",
     type: "Full-time",
+    category: "Engineering",
     tags: ["Computer Vision", "C++", "CUDA", "Robotics"],
     postedDate: "2024-01-13",
     description: "Develop autonomous driving perception systems.",
@@ -72,6 +76,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$140k - $240k",
     type: "Full-time",
+    category: "Research",
     tags: ["NLP", "Transformers", "Python", "Open Source"],
     postedDate: "2024-01-12",
     description: "Build and improve state-of-the-art NLP models.",
@@ -85,6 +90,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$150k - $280k",
     type: "Full-time",
+    category: "Operations",
     tags: ["Product", "AI/ML", "Strategy", "Data"],
     postedDate: "2024-01-11",
     description: "Lead product strategy for AI-powered data platforms.",
@@ -98,6 +104,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$130k - $220k",
     type: "Full-time",
+    category: "Engineering",
     tags: ["MLOps", "Kubernetes", "AWS", "CI/CD"],
     postedDate: "2024-01-10",
     description: "Scale ML infrastructure and deployment pipelines.",
@@ -111,6 +118,7 @@ export const jobList: JobInterface[] = [
     location: "Remote",
     salary: "$120k - $200k",
     type: "Full-time",
+    category: "Engineering",
     tags: ["LLM", "Prompt Engineering", "AI Safety"],
     postedDate: "2024-01-09",
     description: "Design and optimize prompts for large language models.",
