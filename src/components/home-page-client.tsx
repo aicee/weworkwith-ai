@@ -64,8 +64,9 @@ export function HomePageClient() {
             <div className="flex items-center space-x-2 min-w-0 flex-1">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></div>
               <h1 className="text-base sm:text-lg font-medium tracking-tight truncate">
-                <span className="sm:hidden">We Work w/ AI</span>
-                <span className="hidden sm:inline">We Work With AI</span>
+                <span >We Work w/ AI</span>
+                {/* <span className="sm:hidden">We Work w/ AI</span> */}
+                {/* <span className="hidden sm:inline">We Work With AI</span> */}
               </h1>
             </div>
 
