@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { jobList, JobInterface } from "@/data/jobs-post";
+import { CategoryFilter } from "@/components/ui/category-filter";
 interface JobListingsProps {
   isAiMode: boolean;
 }
@@ -41,8 +42,11 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
           : ""
       }`}
       style={{
+        animationName: "slideUp",
+        animationDuration: "0.6s",
+        animationTimingFunction: "ease-out",
+        animationFillMode: "both",
         animationDelay: `${index * 100}ms`,
-        animation: "slideUp 0.6s ease-out both",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -167,9 +171,12 @@ function AiJobData({ job }: { job: JobInterface }) {
   );
 }
 
+type CategoryType = JobInterface["category"] | "All";
+
 export function JobListings({ isAiMode }: JobListingsProps) {
   const [jobs, setJobs] = useState<JobInterface[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState<CategoryType>("All");
 
   useEffect(() => {
     // Simulate API loading
@@ -180,6 +187,23 @@ export function JobListings({ isAiMode }: JobListingsProps) {
 
     return () => clearTimeout(timer);
   }, [jobs]);
+
+  // Calculate job counts per category
+  const jobCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    jobs.forEach(job => {
+      counts[job.category] = (counts[job.category] || 0) + 1;
+    });
+    return counts;
+  }, [jobs]);
+
+  // Filter jobs based on selected category
+  const filteredJobs = useMemo(() => {
+    if (selectedCategory === "All") {
+      return jobs;
+    }
+    return jobs.filter(job => job.category === selectedCategory);
+  }, [jobs, selectedCategory]);
 
   if (loading) {
     return (
@@ -212,12 +236,21 @@ export function JobListings({ isAiMode }: JobListingsProps) {
 
   return (
     <div className="space-y-8">
+      {/* Category Filter */}
+      {!isAiMode && (
+        <CategoryFilter
+          selectedCategory={selectedCategory}
+          onCategoryChange={setSelectedCategory}
+          jobCounts={jobCounts}
+        />
+      )}
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-medium">
           {isAiMode
             ? "Machine-readable job data"
-            : `${jobs.length} open positions`}
+            : `${filteredJobs.length} open position${filteredJobs.length !== 1 ? 's' : ''}`}
         </h2>
         {!isAiMode && (
           <div className="text-sm text-muted-foreground">Updated daily</div>
@@ -227,13 +260,13 @@ export function JobListings({ isAiMode }: JobListingsProps) {
       {/* Job listings */}
       {isAiMode ? (
         <div className="space-y-4">
-          {jobs.map((job) => (
+          {filteredJobs.map((job) => (
             <AiJobData key={job.id} job={job} />
           ))}
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2">
-          {jobs.map((job, index) => (
+          {filteredJobs.map((job, index) => (
             <JobCard key={job.id} job={job} index={index} />
           ))}
         </div>
