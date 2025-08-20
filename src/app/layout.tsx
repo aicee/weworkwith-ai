@@ -5,6 +5,10 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}` 
+    : 'https://weworkwith-ai.com'
+  ),
   title: "We Work With AI - Curated Remote AI Jobs",
   description:
     "Premium remote AI and machine learning jobs from top companies. Featured listings, $175 job posts, 10k+ monthly pageviews. Updated weekly.",
