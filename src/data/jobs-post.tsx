@@ -117,21 +117,4 @@ export const jobList: JobInterface[] = [
     requirements: ["LLM experience", "Creative writing", "AI safety awareness"],
     benefits: ["Flexible hours", "Learning stipend", "Remote workspace budget"],
   },
-  {
-    id: "8",
-    title: "Robotics AI Engineer",
-    company: "Boston Dynamics",
-    location: "Remote",
-    salary: "$170k - $300k",
-    type: "Full-time",
-    tags: ["Robotics", "AI", "Control Systems", "C++"],
-    postedDate: "2024-01-08",
-    description: "Develop AI systems for advanced robotics applications.",
-    requirements: [
-      "Robotics background",
-      "Control theory",
-      "Real-time systems",
-    ],
-    benefits: ["Hardware access", "Research time", "Publication support"],
-  },
 ];
