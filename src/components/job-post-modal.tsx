@@ -89,7 +89,7 @@ export function JobPostModal({
         <ModalHeader>
           <ModalTitle className="text-center">Submit an AI job post</ModalTitle>
           <ModalDescription className="text-center">
-            Add your information below, and we&apos;ll email youthe next steps along with a PayPal invoice for $175.
+            Add your information below, and we&apos;ll email you the next steps along with a PayPal invoice for $175.
           </ModalDescription>
         </ModalHeader>
 
