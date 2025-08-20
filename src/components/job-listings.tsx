@@ -81,7 +81,7 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
                     alt={`${job.company} logo`}
                     width={40}
                     height={40}
-                    className="w-full h-full object-cover bg-white"
+                    className="w-full h-full object-cover bg-white p-1"
                   />
                 </div>
               </div>
