@@ -7,6 +7,11 @@ import { JobListings } from "@/components/job-listings";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import { Notification } from "@/components/ui/notification";
+import {
+  lastUpdated,
+  newJobsThisWeek,
+  totalCompanies,
+} from "@/data/hero-section";
 
 export default function HomePage() {
   const [isAiMode, setIsAiMode] = useState(false);
@@ -64,40 +69,70 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16 border-b border-border/20">
         <div className="max-w-2xl">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-medium leading-tight">
-                Remote AI Jobs
-                <br />
-                <div className="mt-2">
-                  <span className="text-primary mr-2">for</span>
-                  <ContainerTextFlip
-                    className="md:pt-0 md:pb-5 font-medium shadow-none dark:shadow-none"
-                    textClassName="md:text-[2.8rem]"
-                  />
-                </div>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Curated opportunities at leading AI companies.
-                <br />
-                100% remote. Updated weekly.
-              </p>
-            </div>
+          {isAiMode ? (
+            /* Machine-readable format */
+            <div className="space-y-4 font-mono">
+              <pre className="text-sm text-muted-foreground whitespace-pre-wrap">
+                {`# Remote AI Jobs
 
-            <div className="flex items-center space-x-4 text-sm">
-              <div className="flex items-center space-x-2">
-                <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                <span className="text-muted-foreground">
-                  8 new jobs this week
-                </span>
+## Description
+Curated opportunities at leading AI companies.
+100% remote. Updated weekly.
+
+## Statistics
+- New jobs this week: ${newJobsThisWeek}
+- Total companies: ${totalCompanies}+
+
+## Target Audience
+- Developers / Engineers
+- Designers
+- Customer Supports
+- Data Scientists
+- Researchers
+- Product Managers
+- Salespeople
+
+## Last Updated
+${lastUpdated}`}
+              </pre>
+            </div>
+          ) : (
+            /* Human-readable format */
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <h2 className="text-4xl md:text-5xl font-medium leading-tight">
+                  Remote AI Jobs
+                  <br />
+                  <div className="mt-2">
+                    <span className="text-primary mr-2">for</span>
+                    <ContainerTextFlip
+                      className="md:pt-0 md:pb-5 font-medium shadow-none dark:shadow-none"
+                      textClassName="md:text-[2.8rem]"
+                    />
+                  </div>
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Curated opportunities at leading AI companies.
+                  <br />
+                  100% remote. Updated weekly.
+                </p>
               </div>
-              <div className="w-px h-4 bg-border"></div>
-              <div className="flex items-center space-x-2">
-                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                <span className="text-muted-foreground">50+ companies</span>
+
+              <div className="flex items-center space-x-4 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                  <span className="text-muted-foreground">
+                    8 new jobs this week
+                  </span>
+                </div>
+                <div className="w-px h-4 bg-border"></div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                  <span className="text-muted-foreground">50+ companies</span>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
