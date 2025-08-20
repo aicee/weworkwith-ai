@@ -5,7 +5,14 @@ export interface JobInterface {
   location: string;
   salary?: string;
   type: "Full-time" | "Part-time" | "Contract";
-  category: "Engineering" | "Design" | "Operations" | "Sales" | "Support" | "Research" | "Other";
+  category:
+    | "Engineering"
+    | "Design"
+    | "Operations"
+    | "Sales"
+    | "Support"
+    | "Research"
+    | "Other";
   tags: string[];
   postedDate: string;
   description: string;
@@ -13,6 +20,7 @@ export interface JobInterface {
   benefits: string[];
   url?: string;
   featured?: boolean;
+  companyLogo: string;
 }
 
 export const jobList: JobInterface[] = [
@@ -35,6 +43,7 @@ export const jobList: JobInterface[] = [
     benefits: ["Equity", "Health insurance", "Unlimited PTO"],
     url: "https://openai.com/careers",
     featured: true,
+    companyLogo: "/company_logo/openai.svg",
   },
   {
     id: "2",
@@ -50,6 +59,7 @@ export const jobList: JobInterface[] = [
     requirements: ["PhD in CS/ML", "Publication record", "Safety focus"],
     benefits: ["Research budget", "Conference travel", "Flexible hours"],
     featured: false,
+    companyLogo: "/company_logo/anthropic.png",
   },
   {
     id: "3",
@@ -68,6 +78,7 @@ export const jobList: JobInterface[] = [
       "3+ years exp",
     ],
     benefits: ["Stock options", "Health/dental", "Gym membership"],
+    companyLogo: "/company_logo/tesla.jpg",
   },
   {
     id: "4",
@@ -82,6 +93,7 @@ export const jobList: JobInterface[] = [
     description: "Build and improve state-of-the-art NLP models.",
     requirements: ["NLP experience", "Transformer models", "Open source"],
     benefits: ["Remote first", "Learning budget", "Open source time"],
+    companyLogo: "/company_logo/huggingface.png",
   },
   {
     id: "5",
@@ -96,6 +108,7 @@ export const jobList: JobInterface[] = [
     description: "Lead product strategy for AI-powered data platforms.",
     requirements: ["Product management", "AI/ML knowledge", "B2B experience"],
     benefits: ["Equity package", "Health benefits", "Growth opportunities"],
+    companyLogo: "/company_logo/scaleai.png",
   },
   {
     id: "6",
@@ -110,6 +123,7 @@ export const jobList: JobInterface[] = [
     description: "Scale ML infrastructure and deployment pipelines.",
     requirements: ["DevOps experience", "ML systems", "Cloud platforms"],
     benefits: ["Remote work", "Tech stipend", "Professional development"],
+    companyLogo: "/company_logo/cohere.png",
   },
   {
     id: "7",
@@ -124,5 +138,6 @@ export const jobList: JobInterface[] = [
     description: "Design and optimize prompts for large language models.",
     requirements: ["LLM experience", "Creative writing", "AI safety awareness"],
     benefits: ["Flexible hours", "Learning stipend", "Remote workspace budget"],
+    companyLogo: "/company_logo/stabilityai.webp",
   },
 ];
