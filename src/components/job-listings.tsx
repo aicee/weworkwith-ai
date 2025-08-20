@@ -171,6 +171,61 @@ function AiJobData({ job }: { job: JobInterface }) {
   );
 }
 
+function CopyJobDataButton({ jobs }: { jobs: JobInterface[] }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyAll = async () => {
+    const allJobsData = jobs.map(job => ({
+      "@context": "https://schema.org/",
+      "@type": "JobPosting",
+      title: job.title,
+      description: job.description,
+      hiringOrganization: {
+        "@type": "Organization",
+        name: job.company,
+      },
+      jobLocation: {
+        "@type": "Place",
+        address: job.location,
+      },
+      baseSalary: job.salary
+        ? {
+            "@type": "MonetaryAmount",
+            currency: "USD",
+            value: job.salary,
+          }
+        : undefined,
+      employmentType: job.type.toUpperCase().replace("-", "_"),
+      datePosted: job.postedDate,
+      skills: job.tags,
+      qualifications: job.requirements,
+      benefits: job.benefits,
+      identifier: {
+        "@type": "PropertyValue",
+        name: "AI Remote Work Job ID",
+        value: job.id,
+      },
+    }));
+
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(allJobsData, null, 2));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleCopyAll}
+      className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-all duration-200 hover:scale-105"
+    >
+      {copied ? 'Copied!' : 'Copy All Job Data'}
+    </button>
+  );
+}
+
 type CategoryType = JobInterface["category"] | "All";
 
 export function JobListings({ isAiMode }: JobListingsProps) {
@@ -254,6 +309,9 @@ export function JobListings({ isAiMode }: JobListingsProps) {
         </h2>
         {!isAiMode && (
           <div className="text-sm text-muted-foreground">Updated daily</div>
+        )}
+        {isAiMode && (
+          <CopyJobDataButton jobs={filteredJobs} />
         )}
       </div>
 
