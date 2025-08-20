@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
-import { jobList, JobInterface } from "@/data/jobs-post";
-import { CategoryFilter } from "@/components/ui/category-filter";
 import Image from "next/image";
+import { useState, useEffect, useMemo } from "react";
+import { CategoryFilter } from "@/components/ui/category-filter";
+import { jobList, JobInterface } from "@/data/jobs-post";
+import { lastUpdated } from "@/data/hero-section";
 interface JobListingsProps {
   isAiMode: boolean;
 }
@@ -323,7 +324,9 @@ export function JobListings({ isAiMode }: JobListingsProps) {
             : `${filteredJobs.length} open position${filteredJobs.length !== 1 ? "s" : ""}`}
         </h2>
         {!isAiMode && (
-          <div className="text-sm text-muted-foreground">Updated daily</div>
+          <div className="text-sm text-muted-foreground">
+            Last updated: {lastUpdated}
+          </div>
         )}
         {isAiMode && <CopyJobDataButton jobs={filteredJobs} />}
       </div>
