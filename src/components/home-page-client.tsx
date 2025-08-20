@@ -23,8 +23,8 @@ export function HomePageClient() {
 
   // Initialize AI mode from query parameter
   useEffect(() => {
-    const machine = searchParams.get('machine');
-    if (machine === 'true') {
+    const machine = searchParams.get("machine");
+    if (machine === "true") {
       setIsAiMode(true);
     }
   }, [searchParams]);
@@ -37,14 +37,14 @@ export function HomePageClient() {
   // Handle AI mode toggle and update URL
   const handleAiModeToggle = (newAiMode: boolean) => {
     setIsAiMode(newAiMode);
-    
+
     const url = new URL(window.location.href);
     if (newAiMode) {
-      url.searchParams.set('machine', 'true');
+      url.searchParams.set("machine", "true");
     } else {
-      url.searchParams.delete('machine');
+      url.searchParams.delete("machine");
     }
-    
+
     router.push(url.pathname + url.search, { scroll: false });
   };
 
@@ -78,7 +78,10 @@ export function HomePageClient() {
                 <span className="sm:inline">Submit Job</span>
               </button>
               <div className="hidden sm:block">
-                <AiParserSwitch isAiMode={isAiMode} onToggle={handleAiModeToggle} />
+                <AiParserSwitch
+                  isAiMode={isAiMode}
+                  onToggle={handleAiModeToggle}
+                />
               </div>
               <ThemeToggle />
             </div>
@@ -169,7 +172,17 @@ ${lastUpdated}`}
       {/* Minimal Footer */}
       <footer className="relative container mx-auto px-6 py-12 border-t border-border/20">
         <div className="text-sm text-muted-foreground">
-          <p>Built for the AI community. Open to feedback and contributions.</p>
+          <p>
+            Built for the AI community. Open to feedback and contributions →{" "}
+            <a
+              href="https://twitter.com/messages/compose?recipient_id=1482692177340035075"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              DM us on <span className="text-lg font-black font-serif">X</span>
+            </a>
+          </p>
         </div>
       </footer>
 
