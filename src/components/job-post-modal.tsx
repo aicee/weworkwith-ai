@@ -89,8 +89,7 @@ export function JobPostModal({
         <ModalHeader>
           <ModalTitle className="text-center">Submit an AI job post</ModalTitle>
           <ModalDescription className="text-center">
-            Add your information below, and we&apos;ll email you for details and
-            $175 Stripe invoice
+            Add your information below, and we&apos;ll email youthe next steps along with a PayPal invoice for $175.
           </ModalDescription>
         </ModalHeader>
 
@@ -100,18 +99,11 @@ export function JobPostModal({
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center space-x-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span>Job post is featured for 30 days</span>
+                <span>Job post will be featured on <strong>We Work With AI</strong> for 30 days</span>
               </li>
               <li className="flex items-center space-x-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span>Receive personalized note in weekly newsletter</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span>
-                  Metrics: 10k monthly pageviews, 100+ clicks per post, 75% open
-                  rate newsletter
-                </span>
+                <span>We’ll promote your role to our growing audience of AI-focused professionals</span>
               </li>
             </ul>
 
