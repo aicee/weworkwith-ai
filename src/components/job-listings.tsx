@@ -78,7 +78,7 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
               <div className="flex-shrink-0">
                 <div className="w-10 h-10 rounded-lg overflow-hidden bg-secondary/20 border border-border/20 shadow-sm">
                   <Image
-                    src={job.companyLogo}
+                    src={`/company_logo/${job.companyLogo}`}
                     alt={`${job.company} logo`}
                     width={40}
                     height={40}

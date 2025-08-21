@@ -43,7 +43,7 @@ export const jobList: JobInterface[] = [
     benefits: ["Equity", "Comprehensive health, dental, and vision insurance"],
     url: "https://job-boards.greenhouse.io/perplexityai/jobs/4828223007",
     featured: false,
-    companyLogo: "/company_logo/perplexity.svg",
+    companyLogo: "perp.png",
   },
   {
     id: "2",
@@ -59,7 +59,7 @@ export const jobList: JobInterface[] = [
     requirements: ["PhD in CS/ML", "Publication record", "Safety focus"],
     benefits: ["Research budget", "Conference travel", "Flexible hours"],
     featured: false,
-    companyLogo: "/company_logo/anthropic.png",
+    companyLogo: "perp.png",
   },
   {
     id: "3",
@@ -78,7 +78,7 @@ export const jobList: JobInterface[] = [
       "3+ years exp",
     ],
     benefits: ["Stock options", "Health/dental", "Gym membership"],
-    companyLogo: "/company_logo/tesla.jpg",
+    companyLogo: "tesla.jpg",
   },
   {
     id: "4",
@@ -93,7 +93,7 @@ export const jobList: JobInterface[] = [
     description: "Build and improve state-of-the-art NLP models.",
     requirements: ["NLP experience", "Transformer models", "Open source"],
     benefits: ["Remote first", "Learning budget", "Open source time"],
-    companyLogo: "/company_logo/huggingface.png",
+    companyLogo: "huggingface.png",
   },
   {
     id: "5",
@@ -108,7 +108,7 @@ export const jobList: JobInterface[] = [
     description: "Lead product strategy for AI-powered data platforms.",
     requirements: ["Product management", "AI/ML knowledge", "B2B experience"],
     benefits: ["Equity package", "Health benefits", "Growth opportunities"],
-    companyLogo: "/company_logo/scaleai.png",
+    companyLogo: "scaleai.png",
   },
   {
     id: "6",
@@ -123,7 +123,7 @@ export const jobList: JobInterface[] = [
     description: "Scale ML infrastructure and deployment pipelines.",
     requirements: ["DevOps experience", "ML systems", "Cloud platforms"],
     benefits: ["Remote work", "Tech stipend", "Professional development"],
-    companyLogo: "/company_logo/cohere.png",
+    companyLogo: "cohere.png",
   },
   {
     id: "7",
@@ -138,6 +138,6 @@ export const jobList: JobInterface[] = [
     description: "Design and optimize prompts for large language models.",
     requirements: ["LLM experience", "Creative writing", "AI safety awareness"],
     benefits: ["Flexible hours", "Learning stipend", "Remote workspace budget"],
-    companyLogo: "/company_logo/stabilityai.webp",
+    companyLogo: "stabilityai.webp",
   },
 ];
