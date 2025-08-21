@@ -4,7 +4,7 @@ export interface JobInterface {
   company: string;
   location: string;
   salary?: string;
-  type: "Full-time" | "Part-time" | "Contract" | " ";
+  type?: "Full-time" | "Part-time" | "Contract";
   category:
     | "Engineering"
     | "Design"
@@ -18,7 +18,7 @@ export interface JobInterface {
   description: string;
   requirements: string[];
   benefits: string[];
-  url?: string;
+  url: string;
   featured?: boolean;
   companyLogo: string;
 }
@@ -28,13 +28,12 @@ export const jobList: JobInterface[] = [
     id: "1",
     title: "Brand Web Designer - Framer Expert",
     company: "Perplexity",
-    location: "Remote",
+    location: "Remote - New York, San Francisco",
     salary: "$165k - $220k",
-    type: " ",
     category: "Design",
     tags: ["Framer", "React", "TypeScript", "Rive"],
     postedDate: "2025-08-21",
-    description: "Tell stories on the web.",
+    description: "Use Framer to craft interactive web stories that feel fast, clear, and alive.",
     requirements: [
       "Framer mastery",
       "Portfolio that proves interactive storytelling",
@@ -58,6 +57,7 @@ export const jobList: JobInterface[] = [
     description: "Research and develop safe, beneficial AI systems.",
     requirements: ["PhD in CS/ML", "Publication record", "Safety focus"],
     benefits: ["Research budget", "Conference travel", "Flexible hours"],
+    url: "https://google.com",
     featured: false,
     companyLogo: "anthropic.png",
   },
@@ -78,6 +78,7 @@ export const jobList: JobInterface[] = [
       "3+ years exp",
     ],
     benefits: ["Stock options", "Health/dental", "Gym membership"],
+    url: "https://google.com",
     companyLogo: "tesla.jpg",
   },
   {
@@ -93,6 +94,7 @@ export const jobList: JobInterface[] = [
     description: "Build and improve state-of-the-art NLP models.",
     requirements: ["NLP experience", "Transformer models", "Open source"],
     benefits: ["Remote first", "Learning budget", "Open source time"],
+    url: "https://google.com",
     companyLogo: "huggingface.png",
   },
   {
@@ -108,6 +110,7 @@ export const jobList: JobInterface[] = [
     description: "Lead product strategy for AI-powered data platforms.",
     requirements: ["Product management", "AI/ML knowledge", "B2B experience"],
     benefits: ["Equity package", "Health benefits", "Growth opportunities"],
+    url: "https://google.com",
     companyLogo: "scaleai.png",
   },
   {
@@ -123,6 +126,7 @@ export const jobList: JobInterface[] = [
     description: "Scale ML infrastructure and deployment pipelines.",
     requirements: ["DevOps experience", "ML systems", "Cloud platforms"],
     benefits: ["Remote work", "Tech stipend", "Professional development"],
+    url: "https://google.com",
     companyLogo: "cohere.png",
   },
   {
@@ -138,6 +142,7 @@ export const jobList: JobInterface[] = [
     description: "Design and optimize prompts for large language models.",
     requirements: ["LLM experience", "Creative writing", "AI safety awareness"],
     benefits: ["Flexible hours", "Learning stipend", "Remote workspace budget"],
+    url: "https://google.com",
     companyLogo: "stabilityai.webp",
   },
 ];

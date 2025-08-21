@@ -94,8 +94,14 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
               <span className="font-medium">{job.company}</span>
               <span className="text-xs">•</span>
               <span>{job.location}</span>
-              <span className="text-xs">•</span>
-              <span>{job.type}</span>
+              {
+                job.type && (
+                  <>
+                    <span className="text-xs">•</span>
+                    <span>{job.type}</span>
+                  </>
+                )
+              }
               {job.salary && (
                 <>
                   <span className="text-xs">•</span>
@@ -166,7 +172,7 @@ function AiJobData({ job }: { job: JobInterface }) {
           value: job.salary,
         }
       : undefined,
-    employmentType: job.type.toUpperCase().replace("-", "_"),
+    employmentType: job.type ? job.type.toUpperCase().replace("-", "_") : "",
     datePosted: job.postedDate,
     skills: job.tags,
     qualifications: job.requirements,
@@ -211,7 +217,7 @@ function CopyJobDataButton({ jobs }: { jobs: JobInterface[] }) {
             value: job.salary,
           }
         : undefined,
-      employmentType: job.type.toUpperCase().replace("-", "_"),
+      employmentType: job.type ? job.type.toUpperCase().replace("-", "_") : "",
       datePosted: job.postedDate,
       skills: job.tags,
       qualifications: job.requirements,
