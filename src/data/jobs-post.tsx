@@ -43,7 +43,7 @@ export const jobList: JobInterface[] = [
     benefits: ["Equity", "Comprehensive health, dental, and vision insurance"],
     url: "https://job-boards.greenhouse.io/perplexityai/jobs/4828223007",
     featured: false,
-    companyLogo: "perp.png",
+    companyLogo: "perplexity.png",
   },
   {
     id: "2",
@@ -59,7 +59,7 @@ export const jobList: JobInterface[] = [
     requirements: ["PhD in CS/ML", "Publication record", "Safety focus"],
     benefits: ["Research budget", "Conference travel", "Flexible hours"],
     featured: false,
-    companyLogo: "perp.png",
+    companyLogo: "anthropic.png",
   },
   {
     id: "3",
