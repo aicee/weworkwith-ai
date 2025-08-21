@@ -78,6 +78,7 @@ export function JobPostModal({
     { name: "xAI", logo: "/company_logo/xai.png" },
     { name: "Cohere", logo: "/company_logo/cohere.png" },
     { name: "Perplexity", logo: "/company_logo/perplexity.png" },
+    { name: "Anara", logo: "/company_logo/anara.png" },
   ];
 
   return (
@@ -174,7 +175,7 @@ export function JobPostModal({
         {/* Previously Featured Companies */}
         <div className="mt-4 pt-4 border-t border-border">
           <p className="text-xs text-muted-foreground text-center mb-3">
-            Previously featured
+            Featured companies
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {featuredCompanies.map((company, index) => (
