@@ -141,7 +141,7 @@ ${lastUpdated}`}
                   </div>
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Curated opportunities at leading AI companies.
+                  Curated opportunities at AI companies worldwide.
                   <br />
                   100% remote. Updated weekly.
                 </p>
