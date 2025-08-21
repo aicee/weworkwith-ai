@@ -4,7 +4,7 @@ export interface JobInterface {
   company: string;
   location: string;
   salary?: string;
-  type: "Full-time" | "Part-time" | "Contract";
+  type: "Full-time" | "Part-time" | "Contract" | " ";
   category:
     | "Engineering"
     | "Design"
@@ -26,24 +26,24 @@ export interface JobInterface {
 export const jobList: JobInterface[] = [
   {
     id: "1",
-    title: "Senior Machine Learning Engineer",
-    company: "OpenAI",
+    title: "Brand Web Designer - Framer Expert",
+    company: "Perplexity",
     location: "Remote",
-    salary: "$180k - $350k",
-    type: "Full-time",
-    category: "Engineering",
-    tags: ["Python", "TensorFlow", "PyTorch", "ML"],
-    postedDate: "2024-01-15",
-    description: "Join our team building the future of AI systems at scale.",
+    salary: "$165k - $220k",
+    type: " ",
+    category: "Design",
+    tags: ["Framer", "React", "TypeScript", "Rive"],
+    postedDate: "2025-08-21",
+    description: "Tell stories on the web.",
     requirements: [
-      "5+ years ML experience",
-      "PhD preferred",
-      "Distributed systems",
+      "Framer mastery",
+      "Portfolio that proves interactive storytelling",
+      "Comfort adding custom code in Framer (React, TypeScript, or beyond)",
     ],
-    benefits: ["Equity", "Health insurance", "Unlimited PTO"],
-    url: "https://openai.com/careers",
-    featured: true,
-    companyLogo: "/company_logo/openai.svg",
+    benefits: ["Equity", "Comprehensive health, dental, and vision insurance"],
+    url: "https://job-boards.greenhouse.io/perplexityai/jobs/4828223007",
+    featured: false,
+    companyLogo: "/company_logo/perplexity.svg",
   },
   {
     id: "2",
