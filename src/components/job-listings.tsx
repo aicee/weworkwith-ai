@@ -133,7 +133,8 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
 
           <div className="flex items-center justify-between">
             <span className="text-xs text-muted-foreground">
-              Posted {new Date(job.postedDate).toLocaleDateString()}
+              {/* Posted {new Date(job.postedDate).toLocaleDateString()} */}
+              Posted {new Date(job.postedDate).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
             </span>
           </div>
         </div>
