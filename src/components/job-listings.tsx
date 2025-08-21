@@ -117,7 +117,7 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
           </p>
 
           <div className="flex flex-wrap gap-2">
-            {job.tags.slice(0, 4).map((tag, index) => (
+            {job.tags.map((tag, index) => (
               <span
                 key={index}
                 className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-secondary/50 text-secondary-foreground border border-secondary/20"
@@ -125,11 +125,11 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
                 {tag}
               </span>
             ))}
-            {job.tags.length > 4 && (
+            {/* {job.tags.length > 4 && (
               <span className="text-xs text-muted-foreground">
                 +{job.tags.length - 4} more
               </span>
-            )}
+            )} */}
           </div>
 
           <div className="flex items-center justify-between">
