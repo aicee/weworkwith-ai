@@ -79,6 +79,10 @@ export function JobPostModal({
     { name: "Cohere", logo: "/company_logo/cohere.png" },
     { name: "Perplexity", logo: "/company_logo/perplexity.png" },
     { name: "Anara", logo: "/company_logo/anara.png" },
+    { name: "Layer", logo: "/company_logo/layer.png" },
+    { name: "AssemblyAI", logo: "/company_logo/assemblyai.png" },
+    { name: "ElevenLabs", logo: "/company_logo/elevenlabs.svg" },
+    { name: "N8N", logo: "/company_logo/n8n.png" },
   ];
 
   return (
