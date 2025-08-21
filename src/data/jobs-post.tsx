@@ -248,5 +248,49 @@ export const jobList: JobInterface[] = [
     url: "https://jobs.ashbyhq.com/anara/488b4ca4-5f19-483c-80c2-ae6441a24b4c",
     featured: false,
     companyLogo: "anara.png",
-  }
+  },
+  {
+    id: "10",
+    title: "API Support Engineer",
+    company: "AssemblyAI",
+    location: "Remote - EU",
+    salary: "£60,572 – £66,948",
+    type: "Full-time",
+    category: "Support",
+    tags: ["API Support", "Customer Success", "REST APIs", "Technical Support"],
+    postedDate: "2025-08-21 14:18:42",
+    description: "Be the first line of support for AssemblyAI’s customers, helping them integrate and troubleshoot API functionality while serving as a product expert.",
+    requirements: [
+      "6+ months experience in a similar support role",
+      "Customer-facing experience, ideally in a startup environment",
+      "Technical background from coding bootcamp or past software engineering job",
+      "Strong knowledge of REST APIs",
+      "Ability to communicate technical concepts to both clients and engineering teams"
+    ],
+    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005",
+    featured: false,
+    companyLogo: "assemblyai.png"
+  },
+  {
+    id: "11",
+    title: "API Support Engineer",
+    company: "AssemblyAI",
+    location: "Remote - India",
+    salary: "₹4,877,889 – ₹5,391,351",
+    type: "Full-time",
+    category: "Support",
+    tags: ["API Support", "Customer Success", "REST APIs", "Technical Support"],
+    postedDate: "2025-08-21 14:18:42",
+    description: "Be the first line of support for AssemblyAI’s customers, helping them integrate and troubleshoot API functionality while serving as a product expert.",
+    requirements: [
+      "6+ months experience in a similar support role",
+      "Customer-facing experience, ideally in a startup environment",
+      "Technical background from coding bootcamp or past software engineering job",
+      "Strong knowledge of REST APIs",
+      "Ability to communicate technical concepts to both clients and engineering teams"
+    ],
+    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005",
+    featured: false,
+    companyLogo: "assemblyai.png"
+  },
 ];
