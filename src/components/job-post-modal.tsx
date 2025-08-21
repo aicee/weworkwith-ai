@@ -86,15 +86,15 @@ export function JobPostModal({
   return (
     <Modal open={open} onOpenChange={onOpenChange}>
       <ModalContent className="max-w-md">
-        <ModalHeader>
-          <ModalTitle className="text-center">Post a Job at We Work With AI</ModalTitle>
+        <ModalHeader className="mb-2">
+          <ModalTitle className="text-center mb-4">Post a Job at We Work With AI</ModalTitle>
           <ModalDescription className="text-center">
             Add your information below, and we&apos;ll email you the next steps along with a PayPal invoice for $175.
           </ModalDescription>
         </ModalHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-4">
+          <div className="space-y-12">
             {/* Benefits List */}
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center space-x-2">
@@ -105,7 +105,7 @@ export function JobPostModal({
                 <div className="h-1.5 w-1.5 rounded-full bg-primary" />
                 <span>We’ll promote your role to our growing audience of AI-focused professionals</span>
               </li>
-            </ul>
+            </ul >
 
             {/* Form Fields */}
             <div className="space-y-3">
