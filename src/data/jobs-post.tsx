@@ -17,7 +17,7 @@ export interface JobInterface {
   postedDate: string;
   description: string;
   requirements: string[];
-  benefits: string[];
+  benefits?: string[];
   url: string;
   featured?: boolean;
   companyLogo: string;
