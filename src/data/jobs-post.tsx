@@ -428,4 +428,177 @@ export const jobList: JobInterface[] = [
     featured: false,    
     companyLogo: "elevenlabs.svg"
   },
+  {
+    id: "17",
+    title: "Community Software Engineer",
+    company: "n8n",
+    location: "Remote - Europe",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["JavaScript", "TypeScript", "Open Source", "Community", "GitHub"],
+    postedDate: "2025-08-21 14:46:13",
+    description: "Support community-driven development at n8n by triaging GitHub issues, fixing bugs, reviewing community contributions, and improving contributor workflows.",
+    requirements: [
+      "Experience with JavaScript and TypeScript",
+      "Fluency with GitHub issues, pull requests, and workflows",
+      "Ability to debug and fix bugs across different APIs and node types",
+      "Strong written communication for clear contributor feedback",
+      "Collaborative mindset with openness to feedback"
+    ],
+    benefits: [
+      "Competitive compensation with equity",
+      "30 vacation days in Europe plus public holidays",
+      "Health, pension, and financial benefits according to local norms",
+      "€1K annual budget for courses, books, events, or coaching",
+      "Remote-first culture with team off-sites and hackathons",
+      "$100 per month to support open-source projects"
+    ],
+    url: "https://jobs.ashbyhq.com/n8n/e536d902-678d-4cda-a17d-4dbbcba47430?embed=js&customCssUrl=https%3A%2F%2Fn8n.io%2Fassets%2Fcss%2Fashbyhq.css",
+    featured: false,
+    companyLogo: "n8n.png"
+  },
+  {
+    id: "18",
+    title: "Senior AI Engineer",
+    company: "n8n",
+    location: "Remote - Europe",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["TypeScript", "Node.js", "Vue", "LLMs", "Prompt Engineering"],
+    postedDate: "2025-08-21 14:48:15",
+    description: "Drive intelligent features at n8n by building AI-powered capabilities, integrating LLMs, and enhancing the user experience with smart automation features.",
+    requirements: [
+      "5+ years building web-based products, ideally in B2B SaaS startups",
+      "Strong backend development skills with TypeScript, Node.js, and API design",
+      "Proven experience shipping AI-powered features with LLM APIs (OpenAI, Anthropic, etc.)",
+      "Hands-on experience with prompt engineering, embedding models, and vector stores",
+      "User-focused mindset with fast iteration and bias for shipping"
+    ],
+    benefits: [
+      "Competitive compensation with equity",
+      "30 vacation days in Europe plus public holidays",
+      "Health, pension, and financial benefits according to local norms",
+      "€1K annual budget for courses, books, events, or coaching",
+      "Remote-first culture with team off-sites and hackathons",
+      "$100 per month to support open-source projects"
+    ],
+    url: "https://jobs.ashbyhq.com/n8n/69607328-f9fa-4788-8a6e-8b2d7a102969?embed=js&customCssUrl=https%3A%2F%2Fn8n.io%2Fassets%2Fcss%2Fashbyhq.css",
+    featured: false,    
+    companyLogo: "n8n.png"
+  },
+  {
+    id: "19",
+    title: "AI Tutor - Japanese",
+    company: "xAI",
+    location: "Remote",
+    salary: "$35/hr - $65/hr",
+    type: "Full-time",
+    category: "Support",
+    tags: ["AI Training", "Data Annotation", "Japanese", "Generative AI"],
+    postedDate: "2025-08-21 14:50:32",
+    description: "Generate high-quality, accurately labeled Japanese datasets to improve xAI’s AI models, working on text, voice, and video data for training and benchmarking.",
+    requirements: [
+      "Native proficiency in Japanese, with strong written and spoken skills",
+      "Ability to navigate information sources and databases in Japanese",
+      "Strong communication, interpersonal, and analytical skills",
+      "Expert reading comprehension and ability to make judgments with limited data",
+      "Preferred: background in technical writing, journalism, or professional writing focused on Japanese content"
+    ],
+    benefits: [
+      "Medical, vision, dental, STD, LTD, and life insurance",
+      "Remote work flexibility"
+    ],
+    url: "https://job-boards.greenhouse.io/xai/jobs/4593416007",
+    featured: false,    
+    companyLogo: "xai.png",
+  },
+  {
+    id: "20",
+    title: "AI Tutor - Data Science",
+    company: "xAI",
+    location: "Remote",
+    salary: "$35/hr - $65/hr",
+    type: "Full-time",
+    category: "Support",
+    tags: ["AI Training", "Data Annotation", "Data Science", "Generative AI"],
+    postedDate: "2025-08-21 14:52:22",
+    description: "Provide high-quality labeled data and annotations to support AI model training at xAI. Collaborate with technical teams to refine annotation tools, support AI initiatives, and ensure delivery of curated datasets for model development.",
+    requirements: [
+      "IMO medalist (or similar) OR Master's/PhD in a data science related field",
+      "Proficiency in English, both written and spoken",
+      "Strong ability to navigate databases and online resources",
+      "Excellent communication, interpersonal, and analytical skills",
+      "Strong reading comprehension and ability to make informed judgments",
+      "Preferred: publication experience, teaching background, or professional Data Scientist experience"
+    ],
+    benefits: [
+      "Compensation: $35–$65/hour depending on skills and experience",
+      "Medical insurance for full-time roles (varies by country)",
+      "Remote work flexibility"
+    ],
+    url: "https://job-boards.greenhouse.io/xai/jobs/4621682007",
+    featured: false,
+    companyLogo: "xai.png",
+  },
+  {
+    id: "21",
+    title: "VP of Engineering",
+    company: "Layer",
+    location: "Remote",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["Engineering Leadership", "System Architecture", "Mentorship", "Generative AI", "Gaming"],
+    postedDate: "2025-08-21 14:56:45",
+    description: "Lead Layer’s engineering vision, strategy, and execution while building and mentoring a world-class team to deliver AI-driven creative tools for game artists.",
+    requirements: [
+      "Deep technical expertise as a software engineer and architect",
+      "Proven experience scaling engineering teams in high-growth startups",
+      "Strong background in system architecture and pragmatic trade-offs",
+      "Experience hiring, managing, and developing engineering talent",
+      "Excellent communication skills for both technical and non-technical audiences",
+      "Strong ownership and ability to thrive in dynamic environments"
+    ],
+    benefits: [
+      "Equity plan",
+      "Competitive salary and benefits",
+      "Laptop and equipment budget"
+    ],
+    url: "https://ats.rippling.com/layer/jobs/5b30dd57-2883-48c6-873d-1ffe841ce82b",
+    featured: false,
+    companyLogo: "layer.png",
+  },
+  {
+    id: "22",
+    title: "Contract Partner Marketing Manager",
+    company: "Cohere",
+    location: "Remote - San Francisco | Toronto | New York",
+    type: "Contract",
+    category: "Sales",
+    tags: ["Partner Marketing", "B2B Marketing", "Cloud Ecosystems", "Go-to-Market"],
+    postedDate: "2025-08-21 15:12:44",
+    description: "Drive strategic partner marketing initiatives with key cloud providers to accelerate adoption of Cohere’s enterprise AI solutions through GTM programs, campaigns, and partner enablement.",
+    requirements: [
+      "5+ years of experience in B2B marketing within enterprise tech, SaaS, or AI",
+      "Proven experience in cloud partner marketing and co-marketing with large technology providers",
+      "Strong understanding of GTM strategies, partner ecosystems, and cloud-based AI solutions",
+      "Track record of leading multi-channel marketing campaigns with measurable impact",
+      "Strong relationship management skills across sales, product, and partner teams",
+      "Ability to translate technical concepts into compelling marketing narratives",
+      "Data-driven mindset with experience analyzing program performance",
+      "Passion for AI and experience leveraging AI tools in marketing strategies"
+    ],
+    benefits: [
+      "Inclusive and collaborative culture",
+      "Work with leading AI research team",
+      "Weekly lunch stipend and office snacks",
+      "Full health and dental benefits with mental health budget",
+      "100% parental leave top-up for 6 months (Canada, US, UK)",
+      "Personal enrichment benefits",
+      "Remote-flexible with offices in major cities and co-working stipend",
+      "6 weeks of vacation"
+    ],
+    url: "https://jobs.ashbyhq.com/cohere/335a79f7-e972-49b2-9df7-0c9ade963979",
+    featured: false,
+    companyLogo: "cohere.png",
+  },
 ];
