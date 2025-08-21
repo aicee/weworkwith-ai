@@ -74,13 +74,10 @@ export function JobPostModal({
   };
 
   const featuredCompanies = [
-    { name: "OpenAI", color: "#10b981" },
-    { name: "Anthropic", color: "#f59e0b" },
-    { name: "DeepMind", color: "#3b82f6" },
-    { name: "Hugging Face", color: "#f97316" },
-    { name: "Scale AI", color: "#8b5cf6" },
-    { name: "Cohere", color: "#06b6d4" },
-    { name: "Stability AI", color: "#ec4899" },
+    { name: "BrowseAI", logo: "/company_logo/browseai.webp" },
+    { name: "xAI", logo: "/company_logo/xai.png" },
+    { name: "Cohere", logo: "/company_logo/cohere.png" },
+    { name: "Perplexity", logo: "/company_logo/perplexity.png" },
   ];
 
   return (
@@ -183,10 +180,13 @@ export function JobPostModal({
             {featuredCompanies.map((company, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center w-8 h-8 rounded-full text-xs font-semibold text-white"
-                style={{ backgroundColor: company.color }}
+                className="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden bg-white"
               >
-                {company.name.slice(0, 2).toUpperCase()}
+                <img 
+                  src={company.logo} 
+                  alt={company.name}
+                  className="w-full h-full object-contain p-0.5"
+                />
               </div>
             ))}
           </div>
