@@ -151,13 +151,13 @@ ${lastUpdated}`}
                 <div className="flex items-center space-x-2">
                   <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
                   <span className="text-muted-foreground">
-                    8 new jobs this week
+                  {newJobsThisWeek} new jobs this week
                   </span>
                 </div>
                 <div className="w-px h-4 bg-border"></div>
                 <div className="flex items-center space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                  <span className="text-muted-foreground">50+ companies</span>
+                  <span className="text-muted-foreground">{totalCompanies}+ companies</span>
                 </div>
               </div>
             </div>

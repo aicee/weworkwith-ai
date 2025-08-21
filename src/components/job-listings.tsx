@@ -5,6 +5,7 @@ import { useState, useEffect, useMemo } from "react";
 import { CategoryFilter } from "@/components/ui/category-filter";
 import { jobList, JobInterface } from "@/data/jobs-post";
 import { lastUpdated } from "@/data/hero-section";
+import { formatDistanceToNow } from 'date-fns';
 interface JobListingsProps {
   isAiMode: boolean;
 }
@@ -133,8 +134,7 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
 
           <div className="flex items-center justify-between">
             <span className="text-xs text-muted-foreground">
-              {/* Posted {new Date(job.postedDate).toLocaleDateString()} */}
-              Posted {new Date(job.postedDate).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
+              Posted {formatDistanceToNow(new Date(job.postedDate), { addSuffix: true })}
             </span>
           </div>
         </div>
@@ -332,7 +332,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
         </h2>
         {!isAiMode && (
           <div className="text-sm text-muted-foreground">
-            Last updated: {lastUpdated}
+            Last updated: {formatDistanceToNow(new Date(lastUpdated), { addSuffix: true })}
           </div>
         )}
         {isAiMode && <CopyJobDataButton jobs={filteredJobs} />}
