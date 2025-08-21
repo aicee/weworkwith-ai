@@ -159,11 +159,11 @@ export const jobList: JobInterface[] = [
     company: "xAI",
     location: "Remote",
     salary: "$35/hr - $65/hr",
-    type: "Contract",
+    type: "Full-time",
     category: "Support",
     tags: ["AI Training", "Bilingual", "Data Annotation", "Generative AI"],
     postedDate: "2025-08-21 10:00:00",
-    description: "6-month contract role to generate high-quality bilingual datasets and improve xAI’s AI models, working across English and another supported language.",
+    description: "Generate high-quality bilingual datasets and improve xAI’s AI models, working across English and another supported language.",
     requirements: [
       "Full proficiency in English and one or more of Korean, Vietnamese, Chinese, German, Russian, Italian, French, Arabic, Indonesian, Turkish, Hindi, Persian, Spanish, or Portuguese",
       "Strong written and spoken communication skills",
@@ -251,6 +251,60 @@ export const jobList: JobInterface[] = [
   },
   {
     id: "10",
+    title: "AI Tutor",
+    company: "xAI",
+    location: "Remote",
+    salary: "$35/hr - $65/hr",
+    type: "Full-time",
+    category: "Support",
+    tags: ["AI Training", "Data Annotation", "Generative AI", "English Proficiency"],
+    postedDate: "2025-08-21 14:26:08",
+    description: "Support the training and refinement of xAI’s AI models by labeling and annotating text, voice, and video data, helping improve generative AI systems.",
+    requirements: [
+      "Proficiency in reading and writing English across informal and professional contexts",
+      "Strong communication, interpersonal, analytical, and organizational skills",
+      "Ability to navigate various information resources and exercise judgment with limited data",
+      "Passion for technological advancements and innovation",
+      "Preferred: Proficiency in Korean, Vietnamese, Chinese, German, Russian, Italian, French, Arabic, Indonesian, Turkish, Hindi, Persian, Spanish, or Portuguese"
+    ],
+    benefits: [
+      "Medical insurance depending on country of residence",
+      "Remote work flexibility"
+    ],
+    url: "https://job-boards.greenhouse.io/xai/jobs/4595198007",
+    featured: false,    
+    companyLogo: "xai.png",
+  },
+  {
+    id: "11",
+    title: "Account Executive - Korea",
+    company: "ElevenLabs",
+    location: "Remote - Korea",
+    salary: "Not listed",
+    type: "Full-time",
+    category: "Sales",
+    tags: ["Account Management", "Sales", "AI", "Voice Technology", "Conversational AI"],
+    postedDate: "2025-08-21 14:29:33",
+    description: "Build and manage accounts across industries adopting conversational AI, helping ElevenLabs drive revenue growth with breakthrough voice technology.",
+    requirements: [
+      "3–5 years sales experience in SaaS or technology, ideally with AI or API platforms",
+      "Track record of meeting and exceeding sales targets",
+      "Experience selling technical solutions to product or engineering teams is a plus",
+      "Strong communication and relationship-building skills",
+      "Fluency in English and Korean with deep regional and cultural understanding"
+    ],
+    benefits: [
+      "Annual professional development stipend",
+      "Annual stipend for social travel to meet colleagues",
+      "Annual company offsite at a new location",
+      "Monthly coworking stipend"
+    ],
+    url: "https://elevenlabs.io/careers/592954c4-0c40-4198-9fa3-2ed82a84518f/account-executive-korea",
+    featured: false,
+    companyLogo: "elevenlabs.svg",
+  },
+  {
+    id: "12",
     title: "API Support Engineer",
     company: "AssemblyAI",
     location: "Remote - EU",
@@ -272,7 +326,7 @@ export const jobList: JobInterface[] = [
     companyLogo: "assemblyai.png"
   },
   {
-    id: "11",
+    id: "13",
     title: "API Support Engineer",
     company: "AssemblyAI",
     location: "Remote - India",
@@ -292,5 +346,86 @@ export const jobList: JobInterface[] = [
     url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005",
     featured: false,
     companyLogo: "assemblyai.png"
+  },
+  {
+    id: "14",
+    title: "Design Engineer",
+    company: "ElevenLabs",
+    location: "Remote",
+    type: "Full-time",
+    category: "Design",
+    tags: ["Frontend", "Next.js", "React", "Framer Motion", "Web Design"],
+    postedDate: "2025-08-21 14:34:35",
+    description: "Design and implement world-class website pages and interactive demos that showcase ElevenLabs’ brand, products, and research, driving engagement and conversion.",
+    requirements: [
+      "Strong frontend engineering skills with proficiency in Next.js and React",
+      "Experience with design libraries such as Framer Motion or D3",
+      "Portfolio showcasing compelling web and marketing projects",
+      "Ability to collaborate with Design, Engineering, and Growth teams",
+      "Bonus: proficiency in design, copywriting, or SEO"
+    ],
+    benefits: [
+      "Annual professional development stipend",
+      "Annual stipend for social travel to meet colleagues",
+      "Annual company offsite at a new location",
+      "Monthly coworking stipend"
+    ],
+    url: "https://elevenlabs.io/careers/20476dac-9e9d-4a34-9b84-8cf97b7cc35e/design-engineer",
+    featured: false,    
+    companyLogo: "elevenlabs.svg"
+  },
+  {
+    id: "15",
+    title: "Data Engineer",
+    company: "ElevenLabs",
+    location: "Remote - United Kingdom",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["Data Engineering", "dbt", "Python", "SQL", "Data Pipelines"],
+    postedDate: "2025-08-21 14:36:55",
+    description: "Formalize, optimize, and scale ElevenLabs’ data pipelines while ensuring data quality and enabling self-service data access across teams.",
+    requirements: [
+      "Expert knowledge of dbt",
+      "Proficiency with modern data stack tools (Python, SQL, BI tools)",
+      "Experience scaling and formalizing data pipelines",
+      "Ability to simplify complex data into clear structures",
+      "Strong ability to meet varied stakeholder requirements with generalized solutions"
+    ],
+    benefits: [
+      "Annual professional development stipend",
+      "Annual stipend for social travel to meet colleagues",
+      "Annual company offsite at a new location",
+      "Monthly coworking stipend"
+    ],
+    url: "https://elevenlabs.io/careers/ffde876c-a04c-4bc7-a7f5-da1bfd0312f1/data-engineer?ashby_jid=ffde876c-a04c-4bc7-a7f5-da1bfd0312f1",
+    featured: false,
+    companyLogo: "elevenlabs.svg"
+  },
+  {
+    id: "16",
+    title: "Technical Customer Support Specialist",
+    company: "ElevenLabs",
+    location: "Remote",
+    type: "Full-time",
+    category: "Support",
+    tags: ["Customer Support", "Technical Troubleshooting", "APIs", "Python", "GCP"],
+    postedDate: "2025-08-21 14:39:45",
+    description: "Provide exceptional technical support to B2B and enterprise clients, resolving API and platform issues, improving documentation, and collaborating with product and engineering teams.",
+    requirements: [
+      "2-3 years technical customer support experience in SaaS or high-growth tech",
+      "Expertise troubleshooting APIs, browser errors, and integrations",
+      "Experience with GCP, BigQuery, Firestore/Firebase, and GoogleSQL/SQL",
+      "Ability to read and troubleshoot code (Python, JavaScript, Node.js, React)",
+      "Strong communication skills and ability to work autonomously in remote teams"
+    ],
+    benefits: [
+      "High-velocity innovation with rapid experimentation",
+      "Truly global remote-first team across 30+ countries",
+      "Collaboration with AI leaders and continuous growth opportunities",
+      "Office hubs in New York, London, and Warsaw"
+    ],
+    url: "https://elevenlabs.io/careers/370464ac-eb94-4ed9-b705-f3ad834c83ce/technical-customer-support-specialist",
+    featured: false,    
+    companyLogo: "elevenlabs.svg"
   },
 ];
