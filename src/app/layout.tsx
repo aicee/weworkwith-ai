@@ -5,13 +5,17 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : 'https://weworkwith-ai.com'
-  ),
-  title: "We Work With AI - Curated Remote AI Jobs",
-  description:
-    "Premium remote AI and machine learning jobs from top companies. Featured listings, $175 job posts, 10k+ monthly pageviews. Updated weekly.",
+  // metadataBase: new URL(process.env.VERCEL_URL 
+  //   ? `https://${process.env.VERCEL_URL}` 
+  //   : 'https://weworkwith-ai.com'
+  // ),
+  // title: "We Work With AI - Curated Remote AI Jobs",
+  // description:
+  //   "Premium remote AI and machine learning jobs from top companies. Featured listings, $175 job posts, 10k+ monthly pageviews. Updated weekly.",
+  
+  metadataBase: new URL("https://weworkwith-ai.com"),
+  title: "Remote AI Jobs | Work at AI Companies Worldwide – We Work With AI",
+  description: "Discover curated remote AI and machine learning jobs at top startups and companies. From designers and developers to support and HR, find your place in the AI industry. 100% remote. Featured listings, $175 job posts.Updated weekly.",
   keywords: [
     "remote AI jobs",
     "machine learning jobs",
@@ -81,9 +85,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://weworkwith-ai.com",
-    title: "We Work With AI - Curated Remote AI Jobs",
-    description:
-      "Premium remote AI and machine learning jobs from top companies. Featured listings, updated daily, 100+ companies.",
+    title: "Remote AI Jobs | Work at AI Companies Worldwide – We Work With AI",
+    description: "Discover curated remote AI and machine learning jobs at top startups and companies. From designers and developers to support and HR, find your place in the AI industry. 100% remote. Updated weekly.",
     siteName: "We Work With AI",
     images: [
       {
