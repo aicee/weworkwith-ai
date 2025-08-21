@@ -182,6 +182,13 @@ ${lastUpdated}`}
               className="text-primary hover:underline"
             >
               DM us on <span className="text-lg font-black font-serif">X</span>
+            </a>{" "}
+            or {" "}
+             <a 
+              href="mailto:hey@weworkwith-ai.com" 
+              className="text-primary hover:underline"
+            >
+           send us an email
             </a>
           </p>
         </div>
