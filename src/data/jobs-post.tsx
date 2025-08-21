@@ -32,7 +32,7 @@ export const jobList: JobInterface[] = [
     salary: "$165k - $220k",
     category: "Design",
     tags: ["Framer", "React", "TypeScript", "Rive"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "Use Framer to craft interactive web stories that feel fast, clear, and alive.",
     requirements: [
       "Framer mastery",
@@ -52,7 +52,7 @@ export const jobList: JobInterface[] = [
     salary: "$90k - $130k",
     category: "Engineering",
     tags: ["Browser QA", "Android", "iOS"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "Work with design, engineering, product, data and support teams to ensure high quality Comet on Android and iOS.",
     requirements: [
       "4+ years industry experience",
@@ -74,7 +74,7 @@ export const jobList: JobInterface[] = [
     type: "Full-time",
     category: "Sales",
     tags: ["GTM Strategy", "Enterprise Sales", "Business Development"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "Drive year-over-year revenue growth and build Cohere’s presence in Germany through strategic sales, partnerships, and market expansion.",
     requirements: [
         "15+ years experience in revenue growth and GTM leadership for technology organizations",
@@ -102,7 +102,7 @@ export const jobList: JobInterface[] = [
     type: "Full-time",
     category: "Sales",
     tags: ["GTM Strategy", "Enterprise Sales", "Business Development"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "Drive year-over-year revenue growth and build Cohere’s presence in Saudi Arabia through strategic sales, partnerships, and market expansion.",
     requirements: [
       "15+ years experience in revenue growth and GTM leadership for technology organizations",
@@ -130,7 +130,7 @@ export const jobList: JobInterface[] = [
     type: "Full-time",
     category: "Engineering",
     tags: ["Solutions Architecture", "Generative AI", "NLP", "Python"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "Work closely with customers as a trusted technical advisor, designing and implementing AI/NLP solutions to drive adoption of Cohere’s products.",
     requirements: [
       "5+ years customer-facing Solutions Architect or similar experience",
@@ -162,7 +162,7 @@ export const jobList: JobInterface[] = [
     type: "Contract",
     category: "Support",
     tags: ["AI Training", "Bilingual", "Data Annotation", "Generative AI"],
-    postedDate: "2025-08-21",
+    postedDate: "August 21, 2025",
     description: "6-month contract role to generate high-quality bilingual datasets and improve xAI’s AI models, working across English and another supported language.",
     requirements: [
       "Full proficiency in English and one or more of Korean, Vietnamese, Chinese, German, Russian, Italian, French, Arabic, Indonesian, Turkish, Hindi, Persian, Spanish, or Portuguese",
