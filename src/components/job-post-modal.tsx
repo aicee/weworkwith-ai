@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/modal";
 import { Button } from "@/components/ui/button";
 import { Loader } from "@/components/ui/loader";
+import Image from "next/image";
 
 interface JobPostModalProps {
   open: boolean;
@@ -89,9 +90,12 @@ export function JobPostModal({
     <Modal open={open} onOpenChange={onOpenChange}>
       <ModalContent className="max-w-md">
         <ModalHeader className="mb-2">
-          <ModalTitle className="text-center mb-4">Post a Job at We Work With AI</ModalTitle>
+          <ModalTitle className="text-center mb-4">
+            Post a Job at We Work With AI
+          </ModalTitle>
           <ModalDescription className="text-center">
-            Add your information below, and we&apos;ll email you the next steps along with a PayPal invoice for $175.
+            Add your information below, and we&apos;ll email you the next steps
+            along with a PayPal invoice for $175.
           </ModalDescription>
         </ModalHeader>
 
@@ -101,13 +105,19 @@ export function JobPostModal({
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center space-x-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span>Job post will be featured on <strong>We Work With AI</strong> for 30 days</span>
+                <span>
+                  Job post will be featured on <strong>We Work With AI</strong>{" "}
+                  for 30 days
+                </span>
               </li>
               <li className="flex items-center space-x-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span>We’ll promote your role to our growing audience of AI-focused professionals</span>
+                <span>
+                  We’ll promote your role to our growing audience of AI-focused
+                  professionals
+                </span>
               </li>
-            </ul >
+            </ul>
 
             {/* Form Fields */}
             <div className="space-y-3">
@@ -187,9 +197,11 @@ export function JobPostModal({
                 key={index}
                 className="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden bg-white"
               >
-                <img 
-                  src={company.logo} 
+                <Image
+                  src={company.logo}
                   alt={company.name}
+                  width={32}
+                  height={32}
                   className="w-full h-full object-contain p-0.5"
                 />
               </div>
