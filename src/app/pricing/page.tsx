@@ -168,7 +168,7 @@ export default function PricingPage() {
             <div>
               <h3 className="font-semibold mb-4">Do you offer refunds?</h3>
               <p className="text-sm text-muted-foreground">
-                Yes, we offer refunds if you're not satisfied with our service. 
+                Yes, we offer refunds if you&apos;re not satisfied with our service. 
                 Email us at{' '}
                 <a
                   href="#"
