@@ -41,7 +41,8 @@ export async function POST(request: NextRequest) {
     try {
       if (process.env.RESEND_API_KEY) {
         const { data, error } = await resend.emails.send({
-          from: "We Work With AI <onboarding@resend.dev>", // Using Resend's default domain for now
+          from: "We Work With AI <hey@weworkwith-ai.com>", // use your verified domain
+          //from: "We Work With AI <onboarding@resend.dev>", // Using Resend's default domain for now
           to: ["mvtaguilaso@gmail.com"], // Your Resend account email - change this to mvtaguilaso@gmail.com after domain verification
           cc: ["hey@weworkwith-ai.com", "hriosnl@gmail.com", "aiceetaguilaso@gmail.com"],
           subject: `🤖 New AI Job Submission from ${name}`,
