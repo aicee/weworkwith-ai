@@ -55,7 +55,8 @@ export function HomePageClient() {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       >
-        Job posted successfully! <br /> We will review and publish it soon.
+        Job posting submitted successfully! 🎉 <br /><br /> Please check your email for the next steps. <br /><br />  
+        Our team will review your submission, and once approved, it will be published on We Work With AI.
       </Notification>
       {/* Enhanced Header */}
       <header className="border-b border-border/20 bg-background/95 backdrop-blur-sm sticky top-0 z-40">

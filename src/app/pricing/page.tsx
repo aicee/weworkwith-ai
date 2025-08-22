@@ -29,7 +29,8 @@ export default function PricingPage() {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       >
-        Job posted successfully! <br /> We will review and publish it soon.
+        Job posting submitted successfully! 🎉 <br /><br /> Please check your email for the next steps. <br /><br /> 
+        Our team will review your submission, and once approved, it will be published on We Work With AI.
       </Notification>
 
       {/* Header Navigation */}
