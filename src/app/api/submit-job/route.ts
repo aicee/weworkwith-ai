@@ -43,8 +43,7 @@ export async function POST(request: NextRequest) {
         const { data, error } = await resend.emails.send({
           from: "We Work With AI <hey@weworkwith-ai.com>", // use your verified domain
           //from: "We Work With AI <onboarding@resend.dev>", // Using Resend's default domain for now
-          to: ["mvtaguilaso@gmail.com"], // Your Resend account email - change this to mvtaguilaso@gmail.com after domain verification
-          cc: ["hey@weworkwith-ai.com", "hriosnl@gmail.com", "aiceetaguilaso@gmail.com"],
+          to: ["mvtaguilaso@gmail.com","hey@weworkwith-ai.com", "hriosnl@gmail.com", "aiceetaguilaso@gmail.com"], // Your Resend account email - change this to mvtaguilaso@gmail.com after domain verification
           subject: `🤖 New AI Job Submission from ${name}`,
           react: emailTemplate,
           replyTo: email, // Allow you to reply directly to the submitter
