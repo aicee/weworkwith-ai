@@ -168,10 +168,39 @@ export default function PricingPage() {
             <div>
               <h3 className="font-semibold mb-4">Do you offer refunds?</h3>
               <p className="text-sm text-muted-foreground">
-                Yes, we offer refunds if you&apos;re not satisfied with our
-                service. Email us at hey@weworkwith-ai.com to request a refund.
+                Yes, we offer refunds if you're not satisfied with our service. 
+                Email us at{' '}
+                <a 
+                  href="mailto:hey@weworkwith-ai.com" 
+                  className="text-blue-500 hover:underline"
+                >
+                  hey@weworkwith-ai.com
+                </a>{' '}
+                to request a refund. For more details, please see our{' '}
+                <Link 
+                  href="/terms" 
+                  className="text-blue-500 hover:underline"
+                >
+                  Refund Policy
+                </Link>.
               </p>
             </div>
+            {/* <div>
+              <h3 className="font-semibold mb-4">
+                Do you offer discounts for bulk job postings?
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Yes, we offer special pricing for companies looking to post multiple job listings. 
+                Please contact us at{' '}
+                <a 
+                  href="mailto:hey@weworkwith-ai.com" 
+                  className="text-blue-500 hover:underline"
+                >
+                  hey@weworkwith-ai.com
+                </a>{' '}
+                to discuss bulk pricing options tailored to your hiring needs.
+              </p>
+            </div> */}
           </div>
         </div>
       </div>
