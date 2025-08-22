@@ -32,7 +32,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-sm text-muted-foreground">
-            {new Date().getFullYear()} We Work With AI. All rights reserved.
+            🤖 {new Date().getFullYear()} We Work With AI. All rights reserved.
           </p>
         </div>
       </div>
