@@ -168,6 +168,23 @@ export default function PricingPage() {
             <div>
               <h3 className="font-semibold mb-4">Do you offer refunds?</h3>
               <p className="text-sm text-muted-foreground">
+                Yes, we offer refunds if you're not satisfied with our service. 
+                Email us at{' '}
+                <a
+                  href="#"
+                  onClick={() => {
+                    window.location.href = "mailto:" + "hey" + "@" + "weworkwith-ai.com"
+                  }}
+                  className="text-blue-500 hover:underline"
+                >
+                  hey@weworkwith-ai.com
+                </a>{' '}
+                to request a refund. For more details, please see our{' '}
+                <Link href="/terms" className="text-blue-500 hover:underline">
+                  Refund Policy
+                </Link>.
+              </p>
+              {/* <p className="text-sm text-muted-foreground">
                 Yes, we offer refunds if you&apos;re not satisfied with our service. 
                 Email us at{' '}
                 <a 
@@ -183,7 +200,8 @@ export default function PricingPage() {
                 >
                   Refund Policy
                 </Link>.
-              </p>
+              </p> */}
+
             </div>
             {/* <div>
               <h3 className="font-semibold mb-4">
