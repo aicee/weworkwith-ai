@@ -138,12 +138,9 @@ export default function TermsPage() {
               <ul className="list-disc pl-5 space-y-2">
                 <li>If you are unsatisfied with the job posting on our board, you may request a refund.</li>
                 <li>To start a refund request, email us at{' '}
-                  <a 
-                    href="mailto:hey@weworkwith-ai.com" 
-                    className="text-blue-500 hover:underline"
-                  >
-                    hey@weworkwith-ai.com
-                  </a>{' '}
+                <span className="text-blue-500">
+                  hey [at] weworkwith-ai [dot] com
+                </span>{' '}
                 with your request details.</li>
                 <li>Each request will be reviewed promptly, and we will respond as quickly as possible.</li>
               </ul>
