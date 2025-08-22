@@ -10,7 +10,7 @@ import { Notification } from "@/components/ui/notification";
 const metadata: Metadata = {
   title: "Pricing | We Work With AI",
   description:
-    "Premium job posting at $175. Reach 10k+ monthly pageviews, featured placement, and access to top AI talent.",
+    "Simple, transparent pricing for job postings from AI startups and companies worldwide.",
 };
 
 export default function PricingPage() {
@@ -61,14 +61,14 @@ export default function PricingPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-6">Pricing</h1>
           <p className="text-lg text-muted-foreground mb-12">
-            Simple, transparent pricing for premium job postings
+            Simple, transparent pricing for job postings from AI startups and companies worldwide
           </p>
         </div>
 
         {/* Main Pricing Card */}
         <div className="max-w-md mx-auto mb-16">
           <div className="border border-border rounded-lg p-8 text-center bg-card">
-            <h2 className="text-2xl font-semibold mb-4">Featured Job Post</h2>
+            <h2 className="text-2xl font-semibold mb-4">Job Post</h2>
             <div className="mb-6">
               <span className="text-5xl font-bold">$175</span>
               <span className="text-muted-foreground ml-2">per post</span>
@@ -79,19 +79,15 @@ export default function PricingPage() {
             <div className="space-y-3 text-left">
               <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
-                <span className="text-sm">30 days featured placement</span>
+                <span className="text-sm">30 days placement on weworkwith-ai.com</span>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
                 <span className="text-sm">10k+ monthly pageviews</span>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
-                <span className="text-sm">Top of listings priority</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                <span className="text-sm">Social media promotion</span>
+                <span className="text-sm">Social media promotion to our growing community of AI professionals</span>
               </div>
             </div>
           </div>
@@ -150,8 +146,7 @@ export default function PricingPage() {
                 How long does my job post stay active?
               </h3>
               <p className="text-sm text-muted-foreground">
-                Your job post will be featured for 30 days and remain active
-                until filled or you choose to remove it.
+                Your job listing will be live on our AI job board for 30 days. If you fill the role before then and want the post taken down, simply reach out to us and we’ll remove it for you.
               </p>
             </div>
             <div>
@@ -159,7 +154,7 @@ export default function PricingPage() {
                 What payment methods do you accept?
               </h3>
               <p className="text-sm text-muted-foreground">
-                We accept all major credit cards through PayPal.
+                We accept all major credit cards and debit cards through PayPal for fast and secure checkout.
               </p>
             </div>
             <div>
@@ -167,8 +162,7 @@ export default function PricingPage() {
                 Can I edit my job post after submission?
               </h3>
               <p className="text-sm text-muted-foreground">
-                Yes, you can make edits to your job post at any time. Contact us
-                with your changes and we&apos;ll update it promptly.
+                Yes! If you need to update your job description, role details, or links, just contact us with the changes and we’ll update your post promptly.
               </p>
             </div>
             <div>
