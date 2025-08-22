@@ -73,9 +73,9 @@ export default function PricingPage() {
               <span className="text-5xl font-bold">$175</span>
               <span className="text-muted-foreground ml-2">per post</span>
             </div>
-            <p className="text-muted-foreground mb-8">
-              30-day featured placement with maximum visibility
-            </p>
+            {/* <p className="text-muted-foreground mb-8">
+              30-day placement with maximum visibility
+            </p> */}
             <div className="space-y-3 text-left">
               <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
