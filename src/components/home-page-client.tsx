@@ -64,7 +64,7 @@ export function HomePageClient() {
             <div className="flex items-center space-x-2 min-w-0 flex-1">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></div>
               <h1 className="text-base sm:text-lg font-medium tracking-tight truncate">
-                <span >We Work w/ AI</span>
+                <span>We Work w/ AI</span>
                 {/* <span className="sm:hidden">We Work w/ AI</span> */}
                 {/* <span className="hidden sm:inline">We Work With AI</span> */}
               </h1>
@@ -151,13 +151,15 @@ ${lastUpdated}`}
                 <div className="flex items-center space-x-2">
                   <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
                   <span className="text-muted-foreground">
-                  {newJobsThisWeek} new jobs this week
+                    {newJobsThisWeek} new jobs this week
                   </span>
                 </div>
                 <div className="w-px h-4 bg-border"></div>
                 <div className="flex items-center space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                  <span className="text-muted-foreground">{totalCompanies}+ companies</span>
+                  <span className="text-muted-foreground">
+                    {totalCompanies}+ companies
+                  </span>
                 </div>
               </div>
             </div>
@@ -172,8 +174,8 @@ ${lastUpdated}`}
 
       {/* Minimal Footer */}
       <footer className="relative container mx-auto px-6 py-12 border-t border-border/20">
-        <div className="text-sm text-muted-foreground">
-          <p>
+        <div className="text-sm text-muted-foreground space-y-4">
+          <div className="text-xs">
             Built for the AI community. Open to feedback and contributions →{" "}
             <a
               href="https://twitter.com/messages/compose?recipient_id=1482692177340035075"
@@ -183,14 +185,22 @@ ${lastUpdated}`}
             >
               DM us on <span className="text-lg font-black font-serif">X</span>
             </a>{" "}
-            or {" "}
-             <a 
-              href="mailto:hey@weworkwith-ai.com" 
+            or{" "}
+            <a
+              href="mailto:hey@weworkwith-ai.com"
               className="text-primary hover:underline"
             >
-           send us an email
+              send us an email
             </a>
-          </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/pricing" className="text-primary hover:underline">
+              Pricing
+            </a>
+            <a href="/terms" className="text-primary hover:underline">
+              Terms & Conditions
+            </a>
+          </div>
         </div>
       </footer>
 
