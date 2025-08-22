@@ -176,6 +176,38 @@ export default function PricingPage() {
         </div>
       </div>
 
+      {/* Minimal Footer */}
+      <footer className="relative container mx-auto px-6 py-12 border-t border-border/20">
+        <div className="text-sm text-muted-foreground space-y-4">
+          <div className="text-xs">
+            Built for the AI community. Open to feedback and contributions →{" "}
+            <a
+              href="https://twitter.com/messages/compose?recipient_id=1482692177340035075"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              DM us on <span className="text-lg font-black font-serif">X</span>
+            </a>{" "}
+            or{" "}
+            <a
+              href="mailto:hey@weworkwith-ai.com"
+              className="text-primary hover:underline"
+            >
+              send us an email
+            </a>
+          </div>
+          <div className="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/pricing" className="text-primary hover:underline">
+              Pricing
+            </a>
+            <a href="/terms" className="text-primary hover:underline">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </footer>
+
       {/* Job Post Modal */}
       <JobPostModal
         open={isJobPostModalOpen}
