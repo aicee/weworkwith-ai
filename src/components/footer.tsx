@@ -24,12 +24,12 @@ export default function Footer() {
             >
               Terms & Conditions
             </Link>
-            <Link 
+            {/* <Link 
               href="/resources" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Resources
-            </Link>
+            </Link> */}
           </div>
           <p className="text-sm text-muted-foreground">
             🤖 {new Date().getFullYear()} We Work With AI. All rights reserved.
