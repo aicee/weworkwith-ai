@@ -153,74 +153,47 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
   );
 }
 
-interface AiJobDataProps {
-  job: JobInterface;
-}
-
-const AiJobData: React.FC<AiJobDataProps> = ({ job }) => {
-  const jobPosting = {
+function AiJobData({ job }: { job: JobInterface }) {
+  const structuredData = {
     "@context": "https://schema.org/",
     "@type": "JobPosting",
     title: job.title,
     description: job.description,
-    datePosted: job.postedDate,
-    validThrough: format(
-      new Date(
-        new Date(job.postedDate).setDate(
-          new Date(job.postedDate).getDate() + 30
-        )
-      ),
-      "yyyy-MM-dd"
-    ),
-    employmentType: job.type || "FULL_TIME",
     hiringOrganization: {
       "@type": "Organization",
       name: job.company,
-      sameAs: job.url,
-      logo: job.companyLogo
-        ? `https://www.weworkwith-ai.com/company_logo/${job.companyLogo}`
-        : undefined,
     },
     jobLocation: {
       "@type": "Place",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: job.location
-          .replace("Remote - ", "")
-          .split("|")[0]
-          .trim(),
-        addressRegion: job.location.includes("|")
-          ? job.location.split("|")[1]?.trim()
-          : undefined,
-        addressCountry: job.location.toLowerCase().includes("remote")
-          ? undefined
-          : "US",
-      },
+      address: job.location,
     },
     baseSalary: job.salary
       ? {
           "@type": "MonetaryAmount",
-          currency: job.salary.startsWith("$") ? "USD" : undefined,
-          value: {
-            "@type": "QuantitativeValue",
-            value: job.salary.replace(/[^0-9.,]/g, ""),
-            unitText: "YEAR",
-          },
+          currency: "USD",
+          value: job.salary,
         }
       : undefined,
-    skills: job.tags.join(", "),
-    responsibilities: job.requirements,
-    workHours: job.type === "Part-time" ? "PART_TIME" : "FULL_TIME",
-    jobBenefits: job.benefits,
+    employmentType: job.type ? job.type.toUpperCase().replace("-", "_") : "",
+    datePosted: job.postedDate,
+    skills: job.tags,
+    qualifications: job.requirements,
+    benefits: job.benefits,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "AI Remote Work Job ID",
+      value: job.id,
+    },
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPosting) }}
-    />
+    <div className="p-4 bg-card border border-border/30 rounded-lg hover:border-border transition-colors duration-200">
+      <pre className="text-xs text-muted-foreground font-mono overflow-x-auto whitespace-pre-wrap leading-relaxed">
+        {JSON.stringify(structuredData, null, 2)}
+      </pre>
+    </div>
   );
-};
+}
 
 function CopyJobDataButton({ jobs }: { jobs: JobInterface[] }) {
   const [copied, setCopied] = useState(false);
@@ -373,7 +346,6 @@ export function JobListings({ isAiMode }: JobListingsProps) {
           {filteredJobs.map((job) => (
             <AiJobData key={job.id} job={job} />
           ))}
-          {/* Machine-readable data not showing here */}
         </div>
       ) : (
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
@@ -385,5 +357,3 @@ export function JobListings({ isAiMode }: JobListingsProps) {
     </div>
   );
 }
-
-export { AiJobData };
