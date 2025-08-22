@@ -96,13 +96,13 @@ export const JobSubmissionEmail = ({
                 <strong>1.</strong> Review the job posting at the provided URL
               </Text>
               <Text style={step}>
-                <strong>2.</strong> Send $175 Stripe invoice to {email}
+                <strong>2.</strong> Send $175 PayPal invoice / payment link to {email}
               </Text>
               <Text style={step}>
-                <strong>3.</strong> Once paid, feature the job for 30 days
+                <strong>3.</strong> Once paid, post the job for 30 days
               </Text>
               <Text style={step}>
-                <strong>4.</strong> Include in weekly newsletter
+                <strong>4.</strong> Include in weekly newsletter (to be added)
               </Text>
             </Section>
           </Section>
