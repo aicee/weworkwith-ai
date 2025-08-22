@@ -92,7 +92,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       siteName: "We Work With AI",
       images: [
         {
-          url: "/og-image.png",
+          url: "/logo.png",
           width: 1200,
           height: 630,
           alt: "We Work With AI - Curated Remote AI Jobs",
@@ -104,7 +104,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       title: "Remote AI Jobs at AI Companies – We Work With AI",
       description:
         "Curated remote roles at AI companies. Updated weekly.",
-      images: ["/og-image.png"],
+      images: ["/logo.png"],
     },
     alternates: {
       canonical: canonicalUrl,
