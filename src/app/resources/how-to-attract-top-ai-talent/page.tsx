@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How to Attract Top AI Talent in 2024 | We Work With AI",
-  description: "Learn the best strategies for hiring AI professionals in today's competitive market.",
+  description: "Learn the best strategies for hiring AI professionals in today&apos;s competitive market.",
 };
 
 export default function BlogPost() {
@@ -29,17 +29,17 @@ export default function BlogPost() {
 
       <div className="prose prose-invert max-w-none">
         <p className="text-lg mb-6">
-          The competition for AI talent has never been more intense. As AI continues to transform industries, companies are vying for a limited pool of skilled professionals. Here's how to stand out and attract the best AI talent in 2024.
+          The competition for AI talent has never been more intense. As AI continues to transform industries, companies are vying for a limited pool of skilled professionals. Here&apos;s how to stand out and attract the best AI talent in 2024.
         </p>
 
         <h2>1. Showcase Impactful Work</h2>
         <p>
-          Top AI professionals want to work on meaningful projects. Highlight your company's mission and the real-world impact of your AI initiatives. Share case studies, research papers, or open-source contributions that demonstrate your technical excellence.
+          Top AI professionals want to work on meaningful projects. Highlight your company&apos;s mission and the real-world impact of your AI initiatives. Share case studies, research papers, or open-source contributions that demonstrate your technical excellence.
         </p>
 
         <h2>2. Offer Competitive Compensation</h2>
         <p>
-          While salary isn't everything, it remains a critical factor. Research market rates for AI roles in your region and ensure your compensation packages are competitive. Consider offering equity, performance bonuses, or other financial incentives.
+          While salary isn&apos;t everything, it remains a critical factor. Research market rates for AI roles in your region and ensure your compensation packages are competitive. Consider offering equity, performance bonuses, or other financial incentives.
         </p>
 
         <h2>3. Foster a Learning Culture</h2>
@@ -49,12 +49,12 @@ export default function BlogPost() {
 
         <h2>4. Build a Strong Technical Brand</h2>
         <p>
-          Develop your company's technical brand through thought leadership. Encourage your team to speak at conferences, publish research, and contribute to open-source projects. A strong technical reputation will naturally attract top talent.
+          Develop your company&apos;s technical brand through thought leadership. Encourage your team to speak at conferences, publish research, and contribute to open-source projects. A strong technical reputation will naturally attract top talent.
         </p>
 
         <h2>5. Streamline Your Hiring Process</h2>
         <p>
-          Top candidates won't wait through lengthy hiring processes. Streamline your interview process to be efficient and respectful of candidates' time. Provide timely feedback and maintain clear communication throughout the hiring journey.
+          Top candidates won&apos;t wait through lengthy hiring processes. Streamline your interview process to be efficient and respectful of candidates&apos; time. Provide timely feedback and maintain clear communication throughout the hiring journey.
         </p>
 
         <div className="mt-12 pt-8 border-t border-border/30">
