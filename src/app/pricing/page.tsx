@@ -171,23 +171,6 @@ export default function PricingPage() {
                 Yes, we offer refunds if you&apos;re not satisfied with our service. 
                 Email us at{' '}
                 <a
-                  href="#"
-                  onClick={() => {
-                    window.location.href = "mailto:" + "hey" + "@" + "weworkwith-ai.com"
-                  }}
-                  className="text-blue-500 hover:underline"
-                >
-                  hey@weworkwith-ai.com
-                </a>{' '}
-                to request a refund. For more details, please see our{' '}
-                <Link href="/terms" className="text-blue-500 hover:underline">
-                  Refund Policy
-                </Link>.
-              </p>
-              {/* <p className="text-sm text-muted-foreground">
-                Yes, we offer refunds if you&apos;re not satisfied with our service. 
-                Email us at{' '}
-                <a 
                   href="mailto:hey@weworkwith-ai.com" 
                   className="text-blue-500 hover:underline"
                 >
@@ -200,7 +183,7 @@ export default function PricingPage() {
                 >
                   Refund Policy
                 </Link>.
-              </p> */}
+              </p>
 
             </div>
             {/* <div>
