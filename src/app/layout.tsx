@@ -1,19 +1,21 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 
 export function generateMetadata({ params }: { params: any }): Metadata {
-  const baseUrl = 'https://www.weworkwith-ai.com';
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+  const baseUrl = "https://www.weworkwith-ai.com";
+  const pathname =
+    typeof window !== "undefined" ? window.location.pathname : "";
   const canonicalUrl = `${baseUrl}${pathname}`;
 
   return {
     metadataBase: new URL(baseUrl),
     title: "Remote AI Jobs at AI Companies – We Work With AI",
-    description: "Curated remote AI jobs and machine learning jobs—design, developer, support, research, operations, sales, and more, at top AI startups and AI companies. 100% remote. $175 job post. Updated weekly.",
+    description:
+      "Curated remote AI jobs and machine learning jobs—design, developer, support, research, operations, sales, and more, at top AI startups and AI companies. 100% remote. $175 job post. Updated weekly.",
     keywords: [
       "remote AI jobs",
       "AI job board",
@@ -30,45 +32,6 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       "AI researcher",
       "tech jobs",
       "remote developer",
-      // "AI job board",
-      // "AI job listings",
-      // "AI job opportunities",
-      // "AI job postings",
-      // "AI job search",
-      // "AI job openings",
-      // "AI job market",
-      // "AI job vacancies",
-      // "AI job opportunities remote",
-      // "AI job opportunities work from home",
-      // "AI job remote online",
-      // "AI job remote worldwide",
-      // "AI job global",
-      // "AI job international",
-      // "AI job flexible",
-      // "AI job remote part-time",
-      // "AI job remote full-time",
-      // "AI job remote contract",
-      // "AI job remote freelance",
-      // "AI job remote internships",
-      // "AI job remote entry-level",
-      // "AI job remote senior",
-      // "AI job remote experienced",
-      // "AI job remote junior",
-      // "AI job remote mid-level",
-      // "AI job remote work",
-      // "AI job remote jobs",
-      // "AI job remote positions",
-      // "AI job remote careers",
-      // "AI job remote employment",
-      // "AI job remote roles",
-      // "AI job remote openings",
-      // "AI job remote vacancies",
-      // "AI job remote listings",
-      // "AI job remote postings",
-      // "AI job remote search",
-      // "AI job remote market",
-      // "AI job remote board",
-      // "AI job remote platform",
     ],
     authors: [{ name: "We Work With AI" }],
     creator: "We Work With AI",
@@ -89,7 +52,8 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       locale: "en_US",
       url: "https://www.weworkwith-ai.com",
       title: "Remote AI Jobs at AI Companies – We Work With AI",
-      description: "Discover curated remote AI jobs and machine learning jobs at AI startups and companies. 100% remote. Updated weekly.",
+      description:
+        "Discover curated remote AI jobs and machine learning jobs at AI startups and companies. 100% remote. Updated weekly.",
       siteName: "We Work With AI",
       images: [
         {
@@ -103,8 +67,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
     twitter: {
       card: "summary_large_image",
       title: "Remote AI Jobs at AI Companies – We Work With AI",
-      description:
-        "Curated remote roles at AI companies. Updated weekly.",
+      description: "Curated remote roles at AI companies. Updated weekly.",
       images: ["/logo.png"],
     },
     alternates: {

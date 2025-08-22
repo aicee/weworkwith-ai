@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { JobPostModal } from "@/components/job-post-modal";
 import { Notification } from "@/components/ui/notification";
+import Logo from "@/components/logo";
 
 const metadata: Metadata = {
   title: "Pricing | We Work With AI",
@@ -29,22 +30,18 @@ export default function PricingPage() {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       >
-        Job posting submitted successfully! 🎉 <br /><br /> Please check your email for the next steps. <br /><br /> 
-        Our team will review your submission, and once approved, it will be published on We Work With AI.
+        Job posting submitted successfully! 🎉 <br />
+        <br /> Please check your email for the next steps. <br />
+        <br />
+        Our team will review your submission, and once approved, it will be
+        published on We Work With AI.
       </Notification>
 
       {/* Header Navigation */}
       <header className="border-b border-border/20 bg-background/95 backdrop-blur-sm sticky top-0 z-40">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 min-w-0 flex-1">
-              <Link
-                href="/"
-                className="text-base sm:text-lg font-medium tracking-tight truncate hover:text-primary transition-colors"
-              >
-                <span>We Work w/ AI</span>
-              </Link>
-            </div>
+            <Logo />
 
             <div className="flex items-center space-x-3 sm:space-x-6 flex-shrink-0">
               <button
@@ -62,7 +59,8 @@ export default function PricingPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-6">Pricing</h1>
           <p className="text-lg text-muted-foreground mb-12">
-            Simple, transparent pricing for job postings from AI startups and companies worldwide
+            Simple, transparent pricing for job postings from AI startups and
+            companies worldwide
           </p>
         </div>
 
@@ -80,7 +78,9 @@ export default function PricingPage() {
             <div className="space-y-3 text-left">
               <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
-                <span className="text-sm">30 days placement on weworkwith-ai.com</span>
+                <span className="text-sm">
+                  30 days placement on weworkwith-ai.com
+                </span>
               </div>
               {/* <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
@@ -88,7 +88,10 @@ export default function PricingPage() {
               </div> */}
               <div className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
-                <span className="text-sm">Social media promotion to our growing community of AI professionals</span>
+                <span className="text-sm">
+                  Social media promotion to our growing community of AI
+                  professionals
+                </span>
               </div>
             </div>
           </div>
@@ -147,7 +150,9 @@ export default function PricingPage() {
                 How long does my job post stay active?
               </h3>
               <p className="text-sm text-muted-foreground">
-                Your job listing will be live on our AI job board for 30 days. If you fill the role before then and want the post taken down, simply reach out to us and we’ll remove it for you.
+                Your job listing will be live on our AI job board for 30 days.
+                If you fill the role before then and want the post taken down,
+                simply reach out to us and we’ll remove it for you.
               </p>
             </div>
             <div>
@@ -155,7 +160,8 @@ export default function PricingPage() {
                 What payment methods do you accept?
               </h3>
               <p className="text-sm text-muted-foreground">
-                We accept all major credit cards and debit cards through PayPal for fast and secure checkout.
+                We accept all major credit cards and debit cards through PayPal
+                for fast and secure checkout.
               </p>
             </div>
             <div>
@@ -163,29 +169,28 @@ export default function PricingPage() {
                 Can I edit my job post after submission?
               </h3>
               <p className="text-sm text-muted-foreground">
-                Yes! If you need to update your job description, role details, or links, just contact us with the changes and we’ll update your post promptly.
+                Yes! If you need to update your job description, role details,
+                or links, just contact us with the changes and we’ll update your
+                post promptly.
               </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Do you offer refunds?</h3>
               <p className="text-sm text-muted-foreground">
-                Yes, we offer refunds if you&apos;re not satisfied with our service. 
-                Email us at{' '}
+                Yes, we offer refunds if you&apos;re not satisfied with our
+                service. Email us at{" "}
                 <a
-                  href="mailto:hey@weworkwith-ai.com" 
+                  href="mailto:hey@weworkwith-ai.com"
                   className="text-blue-500 hover:underline"
                 >
                   hey@weworkwith-ai.com
-                </a>{' '}
-                to request a refund. For more details, please see our{' '}
-                <Link 
-                  href="/terms" 
-                  className="text-blue-500 hover:underline"
-                >
+                </a>{" "}
+                to request a refund. For more details, please see our{" "}
+                <Link href="/terms" className="text-blue-500 hover:underline">
                   Refund Policy
-                </Link>.
+                </Link>
+                .
               </p>
-
             </div>
             {/* <div>
               <h3 className="font-semibold mb-4">

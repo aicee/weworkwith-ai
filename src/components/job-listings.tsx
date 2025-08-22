@@ -161,39 +161,57 @@ const AiJobData: React.FC<AiJobDataProps> = ({ job }) => {
   const jobPosting = {
     "@context": "https://schema.org/",
     "@type": "JobPosting",
-    "title": job.title,
-    "description": job.description,
-    "datePosted": job.postedDate,
-    "validThrough": format(new Date(new Date(job.postedDate).setDate(new Date(job.postedDate).getDate() + 30)), 'yyyy-MM-dd'),
-    "employmentType": job.type || "FULL_TIME",
-    "hiringOrganization": {
+    title: job.title,
+    description: job.description,
+    datePosted: job.postedDate,
+    validThrough: format(
+      new Date(
+        new Date(job.postedDate).setDate(
+          new Date(job.postedDate).getDate() + 30
+        )
+      ),
+      "yyyy-MM-dd"
+    ),
+    employmentType: job.type || "FULL_TIME",
+    hiringOrganization: {
       "@type": "Organization",
-      "name": job.company,
-      "sameAs": job.url,
-      "logo": job.companyLogo ? `https://www.weworkwith-ai.com/company_logo/${job.companyLogo}` : undefined
+      name: job.company,
+      sameAs: job.url,
+      logo: job.companyLogo
+        ? `https://www.weworkwith-ai.com/company_logo/${job.companyLogo}`
+        : undefined,
     },
-    "jobLocation": {
+    jobLocation: {
       "@type": "Place",
-      "address": {
+      address: {
         "@type": "PostalAddress",
-        "addressLocality": job.location.replace('Remote - ', '').split('|')[0].trim(),
-        "addressRegion": job.location.includes('|') ? job.location.split('|')[1]?.trim() : undefined,
-        "addressCountry": job.location.toLowerCase().includes('remote') ? undefined : 'US'
-      }
+        addressLocality: job.location
+          .replace("Remote - ", "")
+          .split("|")[0]
+          .trim(),
+        addressRegion: job.location.includes("|")
+          ? job.location.split("|")[1]?.trim()
+          : undefined,
+        addressCountry: job.location.toLowerCase().includes("remote")
+          ? undefined
+          : "US",
+      },
     },
-    "baseSalary": job.salary ? {
-      "@type": "MonetaryAmount",
-      "currency": job.salary.startsWith('$') ? 'USD' : undefined,
-      "value": {
-        "@type": "QuantitativeValue",
-        "value": job.salary.replace(/[^0-9.,]/g, ''),
-        "unitText": "YEAR"
-      }
-    } : undefined,
-    "skills": job.tags.join(', '),
-    "responsibilities": job.requirements,
-    "workHours": job.type === 'Part-time' ? "PART_TIME" : "FULL_TIME",
-    "jobBenefits": job.benefits
+    baseSalary: job.salary
+      ? {
+          "@type": "MonetaryAmount",
+          currency: job.salary.startsWith("$") ? "USD" : undefined,
+          value: {
+            "@type": "QuantitativeValue",
+            value: job.salary.replace(/[^0-9.,]/g, ""),
+            unitText: "YEAR",
+          },
+        }
+      : undefined,
+    skills: job.tags.join(", "),
+    responsibilities: job.requirements,
+    workHours: job.type === "Part-time" ? "PART_TIME" : "FULL_TIME",
+    jobBenefits: job.benefits,
   };
 
   return (
@@ -355,6 +373,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
           {filteredJobs.map((job) => (
             <AiJobData key={job.id} job={job} />
           ))}
+          {/* Machine-readable data not showing here */}
         </div>
       ) : (
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">

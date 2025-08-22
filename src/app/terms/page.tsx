@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { JobPostModal } from "@/components/job-post-modal";
 import { Notification } from "@/components/ui/notification";
+import Logo from "@/components/logo";
 
 const metadata: Metadata = {
   title: "Terms & Conditions | We Work With AI",
@@ -29,8 +30,11 @@ export default function TermsPage() {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       >
-        Job posting submitted successfully! 🎉 <br /><br /> Please check your email for the next steps. <br /><br /> 
-        Our team will review your submission, and once approved, it will be published on We Work With AI.
+        Job posting submitted successfully! 🎉 <br />
+        <br /> Please check your email for the next steps. <br />
+        <br />
+        Our team will review your submission, and once approved, it will be
+        published on We Work With AI.
       </Notification>
 
       {/* Header Navigation */}
@@ -38,12 +42,7 @@ export default function TermsPage() {
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 min-w-0 flex-1">
-              <Link
-                href="/"
-                className="text-base sm:text-lg font-medium tracking-tight truncate hover:text-primary transition-colors"
-              >
-                <span>We Work w/ AI</span>
-              </Link>
+              <Logo />
             </div>
 
             <div className="flex items-center space-x-3 sm:space-x-6 flex-shrink-0">
@@ -64,31 +63,41 @@ export default function TermsPage() {
         </h1>
 
         <div className="space-y-12">
-        {/* Introduction */}<section>
-            <h2 className="text-2xl font-semibold mb-6">
-              Introduction
-            </h2>
+          {/* Introduction */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-6">Introduction</h2>
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-              Welcome to We Work With AI, a global job board connecting professionals 
-              with opportunities at AI-driven companies. By using our website and services, 
-              you agree to the following Terms & Conditions. Please read them carefully before 
-              posting or applying for jobs.
+                Welcome to We Work With AI, a global job board connecting
+                professionals with opportunities at AI-driven companies. By
+                using our website and services, you agree to the following Terms
+                & Conditions. Please read them carefully before posting or
+                applying for jobs.
               </p>
             </div>
           </section>
 
           {/* Terms and Conditions Section */}
           <section>
-            <h2 className="text-2xl font-semibold mb-6">
-              Job Posting Terms
-            </h2>
+            <h2 className="text-2xl font-semibold mb-6">Job Posting Terms</h2>
             <div className="space-y-4 text-sm leading-relaxed">
               <ul className="list-disc pl-5 space-y-2">
-                <li>Job postings must be relevant to AI companies or AI-related industries.</li>
-                <li>All postings are reviewed to ensure they meet our community and content guidelines.</li>
-                <li>We reserve the right to reject or remove any job post that is misleading, inappropriate, or violates our standards.</li>
-                <li>Employers are solely responsible for the accuracy of job details, company information, and contact details.</li>
+                <li>
+                  Job postings must be relevant to AI companies or AI-related
+                  industries.
+                </li>
+                <li>
+                  All postings are reviewed to ensure they meet our community
+                  and content guidelines.
+                </li>
+                <li>
+                  We reserve the right to reject or remove any job post that is
+                  misleading, inappropriate, or violates our standards.
+                </li>
+                <li>
+                  Employers are solely responsible for the accuracy of job
+                  details, company information, and contact details.
+                </li>
               </ul>
             </div>
           </section>
@@ -100,11 +109,19 @@ export default function TermsPage() {
             </h2>
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-              WeWorkWith-AI.com serves only as a platform to connect employers and candidates.
+                WeWorkWith-AI.com serves only as a platform to connect employers
+                and candidates.
               </p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>We are not responsible for the hiring process, payment disputes, or employment agreements between employers and job seekers.</li>
-                <li>Users are encouraged to verify job details and use due diligence when applying.</li>
+                <li>
+                  We are not responsible for the hiring process, payment
+                  disputes, or employment agreements between employers and job
+                  seekers.
+                </li>
+                <li>
+                  Users are encouraged to verify job details and use due
+                  diligence when applying.
+                </li>
               </ul>
             </div>
           </section>
@@ -114,17 +131,29 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold mb-6">Privacy Policy</h2>
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-              We respect your privacy and are committed to protecting your personal data.
+                We respect your privacy and are committed to protecting your
+                personal data.
               </p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>We collect information that you provide when submitting job postings, such as company name, contact details, and job description.</li>
-                <li>This information is used only for publishing listings and enabling candidate communication.</li>
-                <li>We do not sell, trade, or share your personal information with
-                third parties except as necessary to provide our services or as
-                required by law.</li>
-                <li>We use industry-standard security measures to protect your
-                information. However, no internet transmission is completely
-                secure, and we cannot guarantee absolute security.</li>
+                <li>
+                  We collect information that you provide when submitting job
+                  postings, such as company name, contact details, and job
+                  description.
+                </li>
+                <li>
+                  This information is used only for publishing listings and
+                  enabling candidate communication.
+                </li>
+                <li>
+                  We do not sell, trade, or share your personal information with
+                  third parties except as necessary to provide our services or
+                  as required by law.
+                </li>
+                <li>
+                  We use industry-standard security measures to protect your
+                  information. However, no internet transmission is completely
+                  secure, and we cannot guarantee absolute security.
+                </li>
               </ul>
             </div>
           </section>
@@ -133,17 +162,23 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-6">Refund Policy</h2>
             <div className="space-y-4 text-sm leading-relaxed">
-              <p>
-              We want you to be satisfied with our service.
-              </p>
+              <p>We want you to be satisfied with our service.</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>If you are unsatisfied with the job posting on our board, you may request a refund.</li>
-                <li>To start a refund request, email us at{' '}
-                <span className="text-blue-500">
-                  hey [at] weworkwith-ai [dot] com
-                </span>{' '}
-                with your request details.</li>
-                <li>Each request will be reviewed promptly, and we will respond as quickly as possible.</li>
+                <li>
+                  If you are unsatisfied with the job posting on our board, you
+                  may request a refund.
+                </li>
+                <li>
+                  To start a refund request, email us at{" "}
+                  <span className="text-blue-500">
+                    hey [at] weworkwith-ai [dot] com
+                  </span>{" "}
+                  with your request details.
+                </li>
+                <li>
+                  Each request will be reviewed promptly, and we will respond as
+                  quickly as possible.
+                </li>
               </ul>
             </div>
           </section>

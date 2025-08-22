@@ -13,6 +13,7 @@ import {
   newJobsThisWeek,
   totalCompanies,
 } from "@/data/hero-section";
+import Logo from "./logo";
 
 export function HomePageClient() {
   const searchParams = useSearchParams();
@@ -55,21 +56,17 @@ export function HomePageClient() {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       >
-        Job posting submitted successfully! 🎉 <br /><br /> Please check your email for the next steps. <br /><br />  
-        Our team will review your submission, and once approved, it will be published on We Work With AI.
+        Job posting submitted successfully! 🎉 <br />
+        <br /> Please check your email for the next steps. <br />
+        <br />
+        Our team will review your submission, and once approved, it will be
+        published on We Work With AI.
       </Notification>
       {/* Enhanced Header */}
       <header className="border-b border-border/20 bg-background/95 backdrop-blur-sm sticky top-0 z-40">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 min-w-0 flex-1">
-              <div className="w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></div>
-              <h1 className="text-base sm:text-lg font-medium tracking-tight truncate">
-                <span>We Work w/ AI</span>
-                {/* <span className="sm:hidden">We Work w/ AI</span> */}
-                {/* <span className="hidden sm:inline">We Work With AI</span> */}
-              </h1>
-            </div>
+            <Logo />
 
             <div className="flex items-center space-x-3 sm:space-x-6 flex-shrink-0">
               <button
@@ -169,41 +166,14 @@ ${lastUpdated}`}
       </section>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-6 py-20">
         <JobListings isAiMode={isAiMode} />
       </main>
 
-      {/* Minimal Footer */}
+      {/* Minimal Footer
       <footer className="relative container mx-auto px-6 py-12 border-t border-border/20">
-        <div className="text-sm text-muted-foreground space-y-4">
-          <div className="text-xs">
-            Built for the AI community. Open to feedback and contributions →{" "}
-            <a
-              href="https://twitter.com/messages/compose?recipient_id=1482692177340035075"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              DM us on <span className="text-lg font-black font-serif">X</span>
-            </a>{" "}
-            or{" "}
-            <a
-              href="mailto:hey@weworkwith-ai.com"
-              className="text-primary hover:underline"
-            >
-              send us an email
-            </a>
-          </div>
-          {/* <div className="flex flex-wrap items-center gap-4 text-xs">
-            <a href="/pricing" className="text-primary hover:underline">
-              Pricing
-            </a>
-            <a href="/terms" className="text-primary hover:underline">
-              Terms & Conditions
-            </a>
-          </div> */}
-        </div>
-      </footer>
+        <div className="text-sm text-muted-foreground space-y-4"></div>
+      </footer> */}
 
       {/* Job Post Modal */}
       <JobPostModal
