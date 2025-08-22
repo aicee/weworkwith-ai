@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo } from "react";
 import { CategoryFilter } from "@/components/ui/category-filter";
 import { jobList, JobInterface } from "@/data/jobs-post";
 import { lastUpdated } from "@/data/hero-section";
-import { formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from "date-fns";
 interface JobListingsProps {
   isAiMode: boolean;
 }
@@ -95,14 +95,12 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
               <span className="font-medium">{job.company}</span>
               <span className="text-xs">•</span>
               <span>{job.location}</span>
-              {
-                job.type && (
-                  <>
-                    <span className="text-xs">•</span>
-                    <span>{job.type}</span>
-                  </>
-                )
-              }
+              {job.type && (
+                <>
+                  <span className="text-xs">•</span>
+                  <span>{job.type}</span>
+                </>
+              )}
               {job.salary && (
                 <>
                   <span className="text-xs">•</span>
@@ -134,7 +132,10 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
 
           <div className="flex items-center justify-between">
             <span className="text-xs text-muted-foreground">
-              Posted {formatDistanceToNow(new Date(job.postedDate), { addSuffix: true })}
+              Posted{" "}
+              {formatDistanceToNow(new Date(job.postedDate), {
+                addSuffix: true,
+              })}
             </span>
           </div>
         </div>
@@ -242,9 +243,9 @@ function CopyJobDataButton({ jobs }: { jobs: JobInterface[] }) {
   return (
     <button
       onClick={handleCopyAll}
-      className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-all duration-200 hover:scale-105"
+      className="px-4 py-2 bg-primary text-primary-foreground text-xs md:text-sm font-medium rounded-lg hover:bg-primary/90 transition-all duration-200 hover:scale-105"
     >
-      {copied ? "Copied!" : "Copy All Job Data"}
+      {copied ? "Copied!" : "Copy Job Data"}
     </button>
   );
 }
@@ -324,15 +325,16 @@ export function JobListings({ isAiMode }: JobListingsProps) {
       )}
 
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-medium">
+      <div className="flex flex-col items-start md:flex-row md:items-center justify-between">
+        <h2 className="text-base md:text-xl font-medium">
           {isAiMode
             ? "Machine-readable job data"
             : `${filteredJobs.length} open position${filteredJobs.length !== 1 ? "s" : ""}`}
         </h2>
         {!isAiMode && (
-          <div className="text-sm text-muted-foreground">
-            Last updated: {formatDistanceToNow(new Date(lastUpdated), { addSuffix: true })}
+          <div className="text-xs md:text-sm text-muted-foreground">
+            Last updated:{" "}
+            {formatDistanceToNow(new Date(lastUpdated), { addSuffix: true })}
           </div>
         )}
         {isAiMode && <CopyJobDataButton jobs={filteredJobs} />}
