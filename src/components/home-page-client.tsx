@@ -194,14 +194,14 @@ ${lastUpdated}`}
               send us an email
             </a>
           </div>
-          <div className="flex flex-wrap items-center gap-4 text-xs">
+          {/* <div className="flex flex-wrap items-center gap-4 text-xs">
             <a href="/pricing" className="text-primary hover:underline">
               Pricing
             </a>
             <a href="/terms" className="text-primary hover:underline">
               Terms & Conditions
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
 

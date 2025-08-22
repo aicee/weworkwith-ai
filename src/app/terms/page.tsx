@@ -150,7 +150,7 @@ export default function TermsPage() {
         </div>
       </div>
 
-      {/* Minimal Footer */}
+      {/* Minimal Footer
       <footer className="relative container mx-auto px-6 py-12 border-t border-border/20">
         <div className="text-sm text-muted-foreground space-y-4">
           <div className="text-xs">
@@ -180,7 +180,7 @@ export default function TermsPage() {
             </a>
           </div>
         </div>
-      </footer>
+      </footer> */}
 
       {/* Job Post Modal */}
       <JobPostModal

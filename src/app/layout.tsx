@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 
 export function generateMetadata({ params }: { params: any }): Metadata {
   const baseUrl = 'https://www.weworkwith-ai.com';
@@ -139,6 +140,7 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col">
             <div className="flex-1">{children}</div>
+            <Footer />
           </div>
         </ThemeProvider>
         <SpeedInsights />
