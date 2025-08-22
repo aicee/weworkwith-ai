@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { JobPostModal } from "@/components/job-post-modal";
 import { Notification } from "@/components/ui/notification";
@@ -36,13 +37,12 @@ export default function TermsPage() {
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 min-w-0 flex-1">
-              <div className="w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></div>
-              <a
+              <Link
                 href="/"
                 className="text-base sm:text-lg font-medium tracking-tight truncate hover:text-primary transition-colors"
               >
                 <span>We Work w/ AI</span>
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-3 sm:space-x-6 flex-shrink-0">
@@ -121,7 +121,7 @@ export default function TermsPage() {
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
                 We want you to be satisfied with our service. If you need a
-                refund for your job posting, please contact us and we'll be
+                refund for your job posting, please contact us and we&apos;ll be
                 happy to help.
               </p>
               <p>
@@ -132,8 +132,8 @@ export default function TermsPage() {
                 >
                   hey@weworkwith-ai.com
                 </a>{" "}
-                with your request details. We'll review your case and respond
-                promptly.
+                with your request details. We&apos;ll review your case and
+                respond promptly.
               </p>
             </div>
           </section>
