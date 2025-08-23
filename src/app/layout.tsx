@@ -50,10 +50,10 @@ export function generateMetadata({ params }: { params: any }): Metadata {
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: "https://www.weworkwith-ai.com",
+      url: baseUrl,
       title: "Remote AI Jobs at AI Companies – We Work With AI",
       description:
-        "Discover curated remote AI jobs and machine learning jobs at AI startups and companies. 100% remote. Updated weekly.",
+        "Browse remote AI and machine learning jobs from startups and global companies. Roles include design, development, research, support, and more.",
       siteName: "We Work With AI",
       images: [
         {
@@ -67,7 +67,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
     twitter: {
       card: "summary_large_image",
       title: "Remote AI Jobs at AI Companies – We Work With AI",
-      description: "Curated remote roles at AI companies. Updated weekly.",
+      description: "Browse remote AI and machine learning jobs from startups and global companies. Roles include design, development, research, support, and more.",
       images: [`${baseUrl}/og-image.png`],
     },
     alternates: {
