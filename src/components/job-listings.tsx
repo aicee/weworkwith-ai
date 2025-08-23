@@ -10,6 +10,8 @@ interface JobListingsProps {
   isAiMode: boolean;
 }
 
+
+
 function ExternalLinkIcon() {
   return (
     <svg
@@ -25,6 +27,35 @@ function ExternalLinkIcon() {
         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
       />
     </svg>
+  );
+}
+
+function JobListSkeleton () {
+  return (
+    <div className="space-y-6">
+        <div className="text-sm text-muted-foreground">Loading jobs...</div>
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+          {[...Array(6)].map((_, i) => (
+            <div
+              key={i}
+              className="p-4 sm:p-6 bg-card border border-border/30 rounded-lg"
+            >
+              <div className="animate-pulse space-y-4">
+                <div className="space-y-2">
+                  <div className="h-5 bg-muted rounded w-3/4"></div>
+                  <div className="h-4 bg-muted rounded w-1/2"></div>
+                </div>
+                <div className="h-4 bg-muted rounded w-full"></div>
+                <div className="flex space-x-2">
+                  <div className="h-6 bg-muted rounded w-16"></div>
+                  <div className="h-6 bg-muted rounded w-20"></div>
+                  <div className="h-6 bg-muted rounded w-14"></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
   );
 }
 
@@ -262,7 +293,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
     const timer = setTimeout(() => {
       setJobs(jobList);
       setLoading(false);
-    }, 800);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [jobs]);
@@ -286,30 +317,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
 
   if (loading) {
     return (
-      <div className="space-y-6">
-        <div className="text-sm text-muted-foreground">Loading jobs...</div>
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-          {[...Array(6)].map((_, i) => (
-            <div
-              key={i}
-              className="p-4 sm:p-6 bg-card border border-border/30 rounded-lg"
-            >
-              <div className="animate-pulse space-y-4">
-                <div className="space-y-2">
-                  <div className="h-5 bg-muted rounded w-3/4"></div>
-                  <div className="h-4 bg-muted rounded w-1/2"></div>
-                </div>
-                <div className="h-4 bg-muted rounded w-full"></div>
-                <div className="flex space-x-2">
-                  <div className="h-6 bg-muted rounded w-16"></div>
-                  <div className="h-6 bg-muted rounded w-20"></div>
-                  <div className="h-6 bg-muted rounded w-14"></div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <JobListSkeleton />
     );
   }
 
@@ -349,7 +357,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
         </div>
       ) : (
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-          {filteredJobs.map((job, index) => (
+          {[...filteredJobs].reverse().map((job, index) => (
             <JobCard key={job.id} job={job} index={index} />
           ))}
         </div>
