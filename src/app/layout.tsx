@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
     metadataBase: new URL(baseUrl),
     title: "Remote AI Jobs at AI Companies – We Work With AI",
     description:
-      "Curated remote AI jobs and machine learning jobs—design, developer, support, research, operations, sales, and more, at top AI startups and AI companies. 100% remote. $175 job post. Updated weekly.",
+      "Curated remote AI jobs and machine learning jobs—design, developer, support, research, operations, sales, and more, at top AI startups and AI companies. 100% remote. $175 job post. Updated weekly on We Work With AI..",
     keywords: [
       "remote AI jobs",
       "AI job board",
@@ -57,7 +57,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       siteName: "We Work With AI",
       images: [
         {
-          url: "/logo.png",
+          url: `${baseUrl}/logo.png`,
           width: 1200,
           height: 630,
           alt: "We Work With AI - Curated Remote AI Jobs",
@@ -68,7 +68,7 @@ export function generateMetadata({ params }: { params: any }): Metadata {
       card: "summary_large_image",
       title: "Remote AI Jobs at AI Companies – We Work With AI",
       description: "Curated remote roles at AI companies. Updated weekly.",
-      images: ["/logo.png"],
+      images: [`${baseUrl}/logo.png`],
     },
     alternates: {
       canonical: canonicalUrl,
