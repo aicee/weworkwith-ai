@@ -351,7 +351,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
       {/* Job listings */}
       {isAiMode ? (
         <div className="space-y-4">
-          {filteredJobs.map((job) => (
+          {[...filteredJobs].reverse().map((job) => (
             <AiJobData key={job.id} job={job} />
           ))}
         </div>
