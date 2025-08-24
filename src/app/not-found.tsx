@@ -11,7 +11,7 @@ import {
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-mono antialiased">
+    <div className="bg-background text-foreground font-mono antialiased">
       {/* Header with navigation */}
       <header className="border-b border-border/20 bg-background/95 backdrop-blur-sm sticky top-0 z-40">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
@@ -28,18 +28,18 @@ export default function NotFound() {
       <main className="container mx-auto px-6 py-16 sm:py-24">
         <div className="max-w-md mx-auto text-center">
           {/* Icon */}
-          <div className="mb-8">
-            <div className="mx-auto w-16 h-16 bg-red-300/50 dark:bg-red-300/70 rounded-full flex items-center justify-center">
+          {/* <div className="mb-8">
+            <div className="mx-auto w-16 h-16 bg-muted/50 rounded-full flex items-center justify-center">
               <ExclamationTriangleIcon
-                className="w-8 h-8 text-red-500 dark:text-red-500"
+                className="w-8 h-8 text-destructive"
                 strokeWidth={1.5}
                 aria-hidden="true"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Error Message */}
-          <div className="mb-8">
+          <div className="mb-8 mt-20">
             <h1 className="text-4xl sm:text-5xl font-medium text-foreground mb-4 tracking-tight">
               404
             </h1>
