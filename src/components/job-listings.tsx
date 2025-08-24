@@ -3,14 +3,12 @@
 import Image from "next/image";
 import { useState, useEffect, useMemo } from "react";
 import { CategoryFilter } from "@/components/ui/category-filter";
-import { jobList, JobInterface } from "@/data/jobs-post";
-import { lastUpdated } from "@/data/hero-section";
+import { jobList, JobInterface } from "@/data/jobs";
+import { lastUpdated } from "@/data/statistics";
 import { formatDistanceToNow, format, parseISO } from "date-fns";
 interface JobListingsProps {
   isAiMode: boolean;
 }
-
-
 
 function ExternalLinkIcon() {
   return (
@@ -30,32 +28,32 @@ function ExternalLinkIcon() {
   );
 }
 
-function JobListSkeleton () {
+function JobListSkeleton() {
   return (
     <div className="space-y-6">
-        <div className="text-sm text-muted-foreground">Loading jobs...</div>
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-          {[...Array(6)].map((_, i) => (
-            <div
-              key={i}
-              className="p-4 sm:p-6 bg-card border border-border/30 rounded-lg"
-            >
-              <div className="animate-pulse space-y-4">
-                <div className="space-y-2">
-                  <div className="h-5 bg-muted rounded w-3/4"></div>
-                  <div className="h-4 bg-muted rounded w-1/2"></div>
-                </div>
-                <div className="h-4 bg-muted rounded w-full"></div>
-                <div className="flex space-x-2">
-                  <div className="h-6 bg-muted rounded w-16"></div>
-                  <div className="h-6 bg-muted rounded w-20"></div>
-                  <div className="h-6 bg-muted rounded w-14"></div>
-                </div>
+      <div className="text-sm text-muted-foreground">Loading jobs...</div>
+      <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="p-4 sm:p-6 bg-card border border-border/30 rounded-lg"
+          >
+            <div className="animate-pulse space-y-4">
+              <div className="space-y-2">
+                <div className="h-5 bg-muted rounded w-3/4"></div>
+                <div className="h-4 bg-muted rounded w-1/2"></div>
+              </div>
+              <div className="h-4 bg-muted rounded w-full"></div>
+              <div className="flex space-x-2">
+                <div className="h-6 bg-muted rounded w-16"></div>
+                <div className="h-6 bg-muted rounded w-20"></div>
+                <div className="h-6 bg-muted rounded w-14"></div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
   );
 }
 
@@ -316,9 +314,7 @@ export function JobListings({ isAiMode }: JobListingsProps) {
   }, [jobs, selectedCategory]);
 
   if (loading) {
-    return (
-      <JobListSkeleton />
-    );
+    return <JobListSkeleton />;
   }
 
   return (

@@ -12,7 +12,7 @@ import {
   lastUpdated,
   newJobsThisWeek,
   totalCompanies,
-} from "@/data/hero-section";
+} from "@/data/statistics";
 import Logo from "./logo";
 
 export function HomePageClient() {
