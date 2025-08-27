@@ -280,7 +280,6 @@ export const jobList: JobInterface[] = [
     title: "Account Executive - Korea",
     company: "ElevenLabs",
     location: "Remote - Korea",
-    salary: "Not listed",
     type: "Full-time",
     category: "Sales",
     tags: ["Account Management", "Sales", "AI", "Voice Technology", "Conversational AI"],
