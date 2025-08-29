@@ -778,4 +778,31 @@ export const jobList: JobInterface[] = [
     featured: false,
     companyLogo: "siena.jpg",
   },
+  {
+    id: "29",
+    title: "Technical Writer",
+    company: "HappyRobot",
+    location: "Remote - San Francisco",
+    type: "Full-time",
+    category: "Operations",
+    tags: ["Technical Writing", "Documentation", "APIs", "AI Concepts", "SaaS"],
+    postedDate: "2025-08-29 11:14:42",
+    description: "Develop clear, user-friendly documentation covering SaaS fundamentals and advanced AI concepts, ensuring HappyRobot customers maximize platform value.",
+    requirements: [
+      "Strong technical knowledge of software development and AI concepts",
+      "Excellent copywriting skills tailored to technical audiences",
+      "Basic design skills for structuring and formatting documentation",
+      "Ability to manage multiple documentation projects under tight deadlines",
+      "Clear communication skills with the ability to explain complex concepts simply"
+    ],
+    benefits: [
+      "Competitive salary and equity in a high-growth startup",
+      "Ownership and autonomy to lead documentation projects",
+      "Opportunity to work with a world-class team of engineers and builders",
+      "Fast-growth environment backed by a16z and YC"
+    ],
+    url: "https://jobs.ashbyhq.com/happyrobot.ai/1228a2ce-c27e-4f50-8a78-f4faec8d7f32?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    featured: false,
+    companyLogo: "happyrobot.jpg",
+  },
 ];
