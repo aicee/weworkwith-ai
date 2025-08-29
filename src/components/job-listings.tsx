@@ -121,13 +121,19 @@ function JobCard({ job, index }: { job: JobInterface; index: number }) {
               </h3>
             </div>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-sm text-muted-foreground">
-              <span className="font-medium">{job.company}</span>
+              <span className="font-medium px-2 py-0.5 rounded bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200">
+                {job.company}
+              </span>
               <span className="text-xs">•</span>
-              <span>{job.location}</span>
+              <span className="px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">
+                {job.location}
+              </span>
               {job.type && (
                 <>
                   <span className="text-xs">•</span>
-                  <span>{job.type}</span>
+                  <span className="px-2 py-0.5 rounded bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200">
+                    {job.type}
+                  </span>
                 </>
               )}
               {job.salary && (
