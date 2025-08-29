@@ -727,7 +727,7 @@ export const jobList: JobInterface[] = [
     type: "Full-time",
     category: "Engineering",
     tags: ["Node.js", "React", "TypeScript", "Express", "AWS", "PostgreSQL", "Redis", "CI/CD"],
-    postedDate: "2025-08-23 15:18:44",
+    postedDate: "2025-08-27 15:18:44",
     description: "Own end-to-end development of scalable features across Siena’s AI-powered customer support platform, working on frontend, backend, and infrastructure with Node.js, React, TypeScript, AWS, and PostgreSQL.",
     requirements: [
       "7+ years of software engineering experience with Node.js, React, TypeScript, and Express",
@@ -757,7 +757,7 @@ export const jobList: JobInterface[] = [
     type: "Full-time",
     category: "Engineering",
     tags: ["LLMs", "Embeddings", "React", "TypeScript", "Node.js", "Postgres"],
-    postedDate: "2025-08-23 15:28:36",
+    postedDate: "2025-08-27 15:28:36",
     description: "Lead development and integration of AI features at Siena using LLMs and natural language technologies to enhance customer experience automation.",
     requirements: [
       "3+ years of experience building AI products with LLMs, embeddings, or NLP technologies",
@@ -802,6 +802,33 @@ export const jobList: JobInterface[] = [
       "Fast-growth environment backed by a16z and YC"
     ],
     url: "https://jobs.ashbyhq.com/happyrobot.ai/1228a2ce-c27e-4f50-8a78-f4faec8d7f32?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    featured: false,
+    companyLogo: "happyrobot.jpg",
+  },
+  {
+    id: "30",
+    title: "Executive Assistant",
+    company: "HappyRobot",
+    location: "Remote - San Francisco",
+    type: "Full-time",
+    category: "Operations",
+    tags: ["Executive Support", "Scheduling", "Operations", "Administration"],
+    postedDate: "2025-08-29 11:42:37",
+    description: "Provide high-level executive support to HappyRobot’s founders, managing schedules, communications, and projects in a fast-paced AI startup environment.",
+    requirements: [
+      "Proven experience as an Executive Assistant",
+      "Exceptional organizational and multitasking skills",
+      "Strong communication and interpersonal abilities",
+      "Discretion in handling confidential information",
+      "Proactive and resourceful problem-solver"
+    ],
+    benefits: [
+      "Competitive salary with equity opportunities",
+      "Ownership and autonomy to lead projects",
+      "Work closely with founders and leadership",
+      "Opportunity to grow in a high-growth AI startup backed by a16z and YC"
+    ],
+    url: "https://jobs.ashbyhq.com/happyrobot.ai/88542103-6b82-49f1-84aa-664c3ee37906?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "happyrobot.jpg",
   },
