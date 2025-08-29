@@ -40,7 +40,7 @@ export const jobList: JobInterface[] = [
       "Comfort adding custom code in Framer (React, TypeScript, or beyond)"
     ],
     benefits: ["Equity", "Comprehensive health, dental, and vision insurance"],
-    url: "https://job-boards.greenhouse.io/perplexityai/jobs/4828223007",
+    url: "https://job-boards.greenhouse.io/perplexityai/jobs/4828223007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "perplexity.png",
   },
@@ -62,7 +62,7 @@ export const jobList: JobInterface[] = [
       "Experience managing QA vendors"
     ],
     benefits: ["Equity", "Comprehensive health, dental, and vision insurance"],
-    url: "https://job-boards.greenhouse.io/perplexityai/jobs/4790717007",
+    url: "https://job-boards.greenhouse.io/perplexityai/jobs/4790717007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "perplexity.png",
   },
@@ -90,7 +90,7 @@ export const jobList: JobInterface[] = [
       "Remote-flexible with co-working stipend",
       "6 weeks vacation"
     ],
-    url: "https://jobs.ashbyhq.com/cohere/922f67a4-da99-4d01-8a2f-8c5997c688df", 
+    url: "https://jobs.ashbyhq.com/cohere/922f67a4-da99-4d01-8a2f-8c5997c688df?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting", 
     featured: false,
     companyLogo: "cohere.png",
   },
@@ -118,7 +118,7 @@ export const jobList: JobInterface[] = [
       "Remote-flexible with co-working stipend",
       "6 weeks vacation"
     ],
-    url: "https://jobs.ashbyhq.com/cohere/ea104e05-2bbc-492e-adec-51aff6c9cbff",
+    url: "https://jobs.ashbyhq.com/cohere/ea104e05-2bbc-492e-adec-51aff6c9cbff?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "cohere.png",
   },
@@ -149,7 +149,7 @@ export const jobList: JobInterface[] = [
       "Remote-flexible with co-working stipend",
       "6 weeks vacation"
     ],
-    url: "https://jobs.ashbyhq.com/cohere/ca446389-c793-459b-b07a-a3544defea04",
+    url: "https://jobs.ashbyhq.com/cohere/ca446389-c793-459b-b07a-a3544defea04?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "cohere.png",
   },
@@ -175,7 +175,7 @@ export const jobList: JobInterface[] = [
       "Medical insurance depending on country of residence",
       "Competitive compensation"
     ],
-    url: "https://job-boards.greenhouse.io/xai/jobs/4512212007",
+    url: "https://job-boards.greenhouse.io/xai/jobs/4512212007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "xai.png",
   },
@@ -196,7 +196,7 @@ export const jobList: JobInterface[] = [
       "High proficiency in English (spoken and written)",
       "Cross-functional collaboration skills with multiple deadlines"
     ],
-    url: "https://ats.rippling.com/browse-ai/jobs/5c4c4006-ecb1-4a37-8ddc-25a0301c5f8b",
+    url: "https://ats.rippling.com/browse-ai/jobs/5c4c4006-ecb1-4a37-8ddc-25a0301c5f8b?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "browseai.webp",
   },
@@ -217,7 +217,7 @@ export const jobList: JobInterface[] = [
       "High proficiency in English (spoken and written)",
       "Cross-functional collaboration skills with multiple deadlines"
     ],
-    url: "https://ats.rippling.com/browse-ai/jobs/5c4c4006-ecb1-4a37-8ddc-25a0301c5f8b",
+    url: "https://ats.rippling.com/browse-ai/jobs/5c4c4006-ecb1-4a37-8ddc-25a0301c5f8b?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "browseai.webp",
   },
@@ -245,7 +245,7 @@ export const jobList: JobInterface[] = [
       "Visa sponsorship for relocation to San Francisco",
       "Office space with marina and Golden Gate bridge view"
     ],
-    url: "https://jobs.ashbyhq.com/anara/488b4ca4-5f19-483c-80c2-ae6441a24b4c",
+    url: "https://jobs.ashbyhq.com/anara/488b4ca4-5f19-483c-80c2-ae6441a24b4c?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "anara.png",
   },
@@ -271,7 +271,7 @@ export const jobList: JobInterface[] = [
       "Medical insurance depending on country of residence",
       "Remote work flexibility"
     ],
-    url: "https://job-boards.greenhouse.io/xai/jobs/4595198007",
+    url: "https://job-boards.greenhouse.io/xai/jobs/4595198007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,    
     companyLogo: "xai.png",
   },
@@ -298,7 +298,7 @@ export const jobList: JobInterface[] = [
       "Annual company offsite at a new location",
       "Monthly coworking stipend"
     ],
-    url: "https://elevenlabs.io/careers/592954c4-0c40-4198-9fa3-2ed82a84518f/account-executive-korea",
+    url: "https://elevenlabs.io/careers/592954c4-0c40-4198-9fa3-2ed82a84518f/account-executive-korea?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "elevenlabs.svg",
   },
@@ -320,7 +320,7 @@ export const jobList: JobInterface[] = [
       "Strong knowledge of REST APIs",
       "Ability to communicate technical concepts to both clients and engineering teams"
     ],
-    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005",
+    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "assemblyai.png"
   },
@@ -342,7 +342,7 @@ export const jobList: JobInterface[] = [
       "Strong knowledge of REST APIs",
       "Ability to communicate technical concepts to both clients and engineering teams"
     ],
-    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005",
+    url: "https://job-boards.greenhouse.io/assemblyai/jobs/4581365005?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "assemblyai.png"
   },
@@ -369,7 +369,7 @@ export const jobList: JobInterface[] = [
       "Annual company offsite at a new location",
       "Monthly coworking stipend"
     ],
-    url: "https://elevenlabs.io/careers/20476dac-9e9d-4a34-9b84-8cf97b7cc35e/design-engineer",
+    url: "https://elevenlabs.io/careers/20476dac-9e9d-4a34-9b84-8cf97b7cc35e/design-engineer?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,    
     companyLogo: "elevenlabs.svg"
   },
@@ -396,7 +396,7 @@ export const jobList: JobInterface[] = [
       "Annual company offsite at a new location",
       "Monthly coworking stipend"
     ],
-    url: "https://elevenlabs.io/careers/ffde876c-a04c-4bc7-a7f5-da1bfd0312f1/data-engineer?ashby_jid=ffde876c-a04c-4bc7-a7f5-da1bfd0312f1",
+    url: "https://elevenlabs.io/careers/ffde876c-a04c-4bc7-a7f5-da1bfd0312f1/data-engineer?ashby_jid=ffde876c-a04c-4bc7-a7f5-da1bfd0312f1&utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "elevenlabs.svg"
   },
@@ -423,7 +423,7 @@ export const jobList: JobInterface[] = [
       "Collaboration with AI leaders and continuous growth opportunities",
       "Office hubs in New York, London, and Warsaw"
     ],
-    url: "https://elevenlabs.io/careers/370464ac-eb94-4ed9-b705-f3ad834c83ce/technical-customer-support-specialist",
+    url: "https://elevenlabs.io/careers/370464ac-eb94-4ed9-b705-f3ad834c83ce/technical-customer-support-specialist?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,    
     companyLogo: "elevenlabs.svg"
   },
@@ -452,7 +452,7 @@ export const jobList: JobInterface[] = [
       "Remote-first culture with team off-sites and hackathons",
       "$100 per month to support open-source projects"
     ],
-    url: "https://jobs.ashbyhq.com/n8n/e536d902-678d-4cda-a17d-4dbbcba47430?embed=js&customCssUrl=https%3A%2F%2Fn8n.io%2Fassets%2Fcss%2Fashbyhq.css",
+    url: "https://jobs.ashbyhq.com/n8n/e536d902-678d-4cda-a17d-4dbbcba47430?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "n8n.png"
   },
@@ -481,7 +481,7 @@ export const jobList: JobInterface[] = [
       "Remote-first culture with team off-sites and hackathons",
       "$100 per month to support open-source projects"
     ],
-    url: "https://jobs.ashbyhq.com/n8n/69607328-f9fa-4788-8a6e-8b2d7a102969?embed=js&customCssUrl=https%3A%2F%2Fn8n.io%2Fassets%2Fcss%2Fashbyhq.css",
+    url: "https://jobs.ashbyhq.com/n8n/69607328-f9fa-4788-8a6e-8b2d7a102969?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,    
     companyLogo: "n8n.png"
   },
@@ -507,7 +507,7 @@ export const jobList: JobInterface[] = [
       "Medical, vision, dental, STD, LTD, and life insurance",
       "Remote work flexibility"
     ],
-    url: "https://job-boards.greenhouse.io/xai/jobs/4593416007",
+    url: "https://job-boards.greenhouse.io/xai/jobs/4593416007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,    
     companyLogo: "xai.png",
   },
@@ -535,7 +535,7 @@ export const jobList: JobInterface[] = [
       "Medical insurance for full-time roles (varies by country)",
       "Remote work flexibility"
     ],
-    url: "https://job-boards.greenhouse.io/xai/jobs/4621682007",
+    url: "https://job-boards.greenhouse.io/xai/jobs/4621682007?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "xai.png",
   },
@@ -562,7 +562,7 @@ export const jobList: JobInterface[] = [
       "Competitive salary and benefits",
       "Laptop and equipment budget"
     ],
-    url: "https://ats.rippling.com/layer/jobs/5b30dd57-2883-48c6-873d-1ffe841ce82b",
+    url: "https://ats.rippling.com/layer/jobs/5b30dd57-2883-48c6-873d-1ffe841ce82b?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "layer.png",
   },
@@ -596,7 +596,7 @@ export const jobList: JobInterface[] = [
       "Remote-flexible with offices in major cities and co-working stipend",
       "6 weeks of vacation"
     ],
-    url: "https://jobs.ashbyhq.com/cohere/335a79f7-e972-49b2-9df7-0c9ade963979",
+    url: "https://jobs.ashbyhq.com/cohere/335a79f7-e972-49b2-9df7-0c9ade963979?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "cohere.png",
   },
@@ -627,7 +627,7 @@ export const jobList: JobInterface[] = [
       "3 weeks PTO in Canada",
       "Equity options"
     ],
-    url: "https://job-boards.greenhouse.io/cresta/jobs/4595480008",
+    url: "https://job-boards.greenhouse.io/cresta/jobs/4595480008?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "cresta.jpg",
   },
@@ -658,7 +658,7 @@ export const jobList: JobInterface[] = [
       "In-office meal program and commuter benefits for onsite employees",
       "Equity options"
     ],
-    url: "https://job-boards.greenhouse.io/cresta/jobs/4884188008",
+    url: "https://job-boards.greenhouse.io/cresta/jobs/4884188008?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "cresta.jpg",
   },
@@ -684,7 +684,7 @@ export const jobList: JobInterface[] = [
       "High ownership and impact in a small, talent-dense team",
       "Remote-first role with global reach"
     ],
-    url: "https://lovable.dev/careers?ashby_jid=ce6aa9ad-cc7e-4920-bd19-38888de179f8#open-positions",
+    url: "https://lovable.dev/careers?utm_medium=jobboard&utm_campaign=joblisting&ashby_jid=ce6aa9ad-cc7e-4920-bd19-38888de179f8#open-positions",
     featured: false,
     companyLogo: "lovable.png",
   },
@@ -715,7 +715,7 @@ export const jobList: JobInterface[] = [
       "Quarterly budget for experimenting with AI tools",
       "Fully remote, globally distributed team"
     ],
-    url: "https://jobs.ashbyhq.com/siena/ea85cec7-dc81-43a6-858b-1596bd373e88?locationId=6dbb7619-bfa3-4331-ab2a-e475c48a1b15",
+    url: "https://jobs.ashbyhq.com/siena/ea85cec7-dc81-43a6-858b-1596bd373e88?locationId=6dbb7619-bfa3-4331-ab2a-e475c48a1b15?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "siena.jpg",
   },
@@ -745,7 +745,7 @@ export const jobList: JobInterface[] = [
       "Quarterly budget for experimenting with AI tools",
       "Fully remote, globally distributed team"
     ],
-    url: "https://jobs.ashbyhq.com/siena/015362e0-016b-48ec-9ace-6df500aeefcf",
+    url: "https://jobs.ashbyhq.com/siena/015362e0-016b-48ec-9ace-6df500aeefcf?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "siena.jpg",
   },
@@ -774,7 +774,7 @@ export const jobList: JobInterface[] = [
       "Quarterly budget for experimenting with AI tools",
       "Fully remote, globally distributed team"
     ],
-    url: "https://jobs.ashbyhq.com/siena/ai-engineer",
+    url: "https://jobs.ashbyhq.com/siena/7d085414-7f09-4be7-886a-67f3c2a43eed?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
     companyLogo: "siena.jpg",
   },
