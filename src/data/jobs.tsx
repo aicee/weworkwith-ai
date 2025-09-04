@@ -886,7 +886,7 @@ export const jobList: JobInterface[] = [
     ],
     url: "https://jobs.ashbyhq.com/P-1%20AI/72479f38-a8d1-403a-bed7-043c13545f7e?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     featured: false,
-    companyLogo: "p1.jpg",
+    companyLogo: "p1.png",
   },
   {
     id: "33",
