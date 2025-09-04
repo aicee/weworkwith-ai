@@ -859,4 +859,62 @@ export const jobList: JobInterface[] = [
     featured: false,
     companyLogo: "happyrobot.jpg",
   },
+  {
+    id: "32",
+    title: "Frontend Super SWE",
+    company: "P-1 AI",
+    location: "Remote - United States | Canada",
+    salary: "$200K – $250K + Equity",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["Frontend", "UI/UX", "React", "JavaScript", "Engineering AGI"],
+    postedDate: "2025-09-04 09:22:11",
+    description: "Join P-1 AI as a Frontend Super SWE to build world-class user interfaces for Archie, an AI engineer for physical product domains. You’ll work closely with designers and engineers to deliver intuitive, high-performance interfaces that define the future of engineering AGI.",
+    requirements: [
+      "Exceptional frontend engineering experience with proven real-world projects",
+      "Strong expertise in UI/UX and frontend development (React, JavaScript or similar)",
+      "Ability to move quickly from concept to prototype (0 → 1 product execution)",
+      "Experience collaborating with world-class designers and engineers",
+      "Comfortable wearing multiple hats across architecture, backend, and infrastructure"
+    ],
+    benefits: [
+      "Competitive salary with significant equity component",
+      "Early-stage startup backed by $23M seed funding",
+      "Work alongside top engineers and AI researchers",
+      "Relocation support if moving to San Francisco",
+      "Hybrid option: remote with regular SF on-site weeks"
+    ],
+    url: "https://jobs.ashbyhq.com/P-1%20AI/72479f38-a8d1-403a-bed7-043c13545f7e?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    featured: false,
+    companyLogo: "p1.jpg",
+  },
+  {
+    id: "33",
+    title: "Backend Engineer, AI",
+    company: "LaunchDarkly",
+    location: "Remote - US",
+    salary: "$141,000 - $229,000",
+    type: "Full-time",
+    category: "Engineering",
+    tags: ["Backend", "Java", "Scala", "Python", "Go", "REST APIs", "Distributed Systems"],
+    postedDate: "2025-09-04 09:28:00",
+    description: "Design, build, and optimize scalable backend systems for LaunchDarkly’s AI team, integrating with AI model providers and powering observability, monitoring, and metrics for next-generation AI applications.",
+    requirements: [
+      "Proficiency in server-side languages such as Java, Scala, Ruby, Python, or Go",
+      "Experience designing and maintaining RESTful APIs",
+      "Strong grasp of data structures, distributed systems, concurrency, and threading",
+      "Ability to deliver maintainable, high-quality production code",
+      "Proven collaboration with Product and Design teams in fast-paced environments",
+      "Bonus: experience with LLM integrations, prompt engineering, or AI APIs (OpenAI, Google Cloud AI, AWS Bedrock)"
+    ],
+    benefits: [
+      "Restricted Stock Units (RSUs)",
+      "Comprehensive health, vision, and dental insurance",
+      "Mental health benefits",
+      "Competitive salary with geographic-based pay zones"
+    ],
+    url: "https://job-boards.greenhouse.io/launchdarkly/jobs/6787132003?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    featured: false,
+    companyLogo: "launchdarkly.svg",
+  },
 ];

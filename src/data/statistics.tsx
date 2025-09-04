@@ -1,3 +1,3 @@
-export const totalCompanies = 13;
-export const newJobsThisWeek = 7;
-export const lastUpdated = "2025-08-29 11:14:18";
+export const totalCompanies = 15;
+export const newJobsThisWeek = 2;
+export const lastUpdated = "2025-09-04 09:22:18";
