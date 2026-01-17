@@ -1,3 +1,4 @@
+import jobs from "./jobs.json";
 export interface JobInterface {
   id: string;
   title: string;
@@ -23,93 +24,4 @@ export interface JobInterface {
   companyLogo: string;
 }
 
-export const jobList: JobInterface[] = [
-  {
-    id: "34",
-    title: "Member of Technical Staff, MLE (Japan)",
-    company: "Cohere",
-    location: "Remote - Japan",
-    salary: "",
-    type: "Full-time",
-    category: "Engineering",
-    tags: ["Machine Learning", "Python", "TensorFlow", "JAX", "Distributed Systems", "Japanese Language"],
-    postedDate: "2025-10-16 09:40:00",
-    description: "Work on applied machine learning at Cohere, leading large-scale AI model initiatives, collaborating with cross-functional teams, and helping customers adopt enterprise AI solutions using LLMs.",
-    requirements: [
-    "Experience leading ML teams in applied research and production",
-    "Strong proficiency in Python and ML frameworks like TensorFlow, JAX, or MLIR",
-    "Experience with large-scale distributed training and inference",
-    "Excellent communication and mentorship skills",
-    "Working proficiency in Japanese",
-    "Preferred: experience in B2B or enterprise ML environments"
-    ],
-    benefits: [
-    "Inclusive and collaborative work culture",
-    "Weekly lunch stipend and in-office snacks",
-    "Comprehensive health and dental benefits",
-    "100% parental leave top-up for 6 months (select regions)",
-    "6 weeks of paid vacation",
-    "Co-working stipend and flexible remote setup"
-    ],
-    url: "https://jobs.ashbyhq.com/cohere/4801ef05-c3b7-4ddf-81b4-ce2ff5dd8a0d?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
-    featured: false,
-    companyLogo: "cohere.png",
-  },
-   {
-    id: "35",
-    title: "Backend Engineer, AI",
-    company: "LaunchDarkly",
-    location: "Remote - US",
-    salary: "$141,000 - $229,000",
-    type: "Full-time",
-    category: "Engineering",
-    tags: ["Backend", "Java", "Scala", "Python", "Go", "REST APIs", "Distributed Systems"],
-    postedDate: "2025-10-16 09:44:00",
-    description: "Design, build, and optimize scalable backend systems for LaunchDarkly’s AI team, integrating with AI model providers and powering observability, monitoring, and metrics for next-generation AI applications.",
-    requirements: [
-      "Proficiency in server-side languages such as Java, Scala, Ruby, Python, or Go",
-      "Experience designing and maintaining RESTful APIs",
-      "Strong grasp of data structures, distributed systems, concurrency, and threading",
-      "Ability to deliver maintainable, high-quality production code",
-      "Proven collaboration with Product and Design teams in fast-paced environments",
-      "Bonus: experience with LLM integrations, prompt engineering, or AI APIs (OpenAI, Google Cloud AI, AWS Bedrock)"
-    ],
-    benefits: [
-      "Restricted Stock Units (RSUs)",
-      "Comprehensive health, vision, and dental insurance",
-      "Mental health benefits",
-      "Competitive salary with geographic-based pay zones"
-    ],
-    url: "https://job-boards.greenhouse.io/launchdarkly/jobs/6787132003?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
-    featured: false,
-    companyLogo: "launchdarkly.svg",
-  },
-{
-    id: "36",
-    title: "Executive Assistant",
-    company: "Dataiku",
-    location: "Remote - United States",
-    salary: "",
-    type: "Full-time",
-    category: "Operations",
-    tags: ["Executive Support", "Scheduling", "Travel Coordination", "Communication", "Organization"],
-    postedDate: "2025-10-16 10:55:00",
-    description: "Provide executive-level administrative support to Dataiku’s Chief Marketing Officer, managing scheduling, travel, communications, and materials preparation in a fast-paced, global AI technology environment.",
-    requirements: [
-    "3+ years of experience supporting senior executives in an administrative or executive assistant role",
-    "Strong experience managing complex schedules and international travel arrangements",
-    "Proficiency with calendar management and expense reporting tools",
-    "Excellent communication, organization, and presentation design skills",
-    "Discretion and professionalism in handling sensitive information",
-    "Proactive and resourceful with strong attention to detail"
-  ],
-  benefits: [
-    "Remote work flexibility",
-    "Exposure to high-level initiatives in a fast-growing AI company",
-    "Collaborative and dynamic global team environment"
-  ],
-    url: "https://job-boards.greenhouse.io/dataiku/jobs/5677225004?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
-    featured: false,
-    companyLogo: "dataiku.png",
-  },
-];
+export const jobList = jobs as JobInterface[];
