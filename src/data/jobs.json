@@ -86,5 +86,48 @@
     "url": "https://jobs.ashbyhq.com/cohere/a81f35cc-9c54-415e-8ef5-ed40234cba15?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     "featured": false,
     "companyLogo": "cohere.png"
+  },
+  {
+    "id": "mknvqmt22eur",
+    "title": "Customer Success Manager",
+    "company": "Siena",
+    "location": "Remote",
+    "salary": "",
+    "type": "Full-time",
+    "category": "Customer Success",
+    "tags": [
+      "Customer Success",
+      "AI",
+      "Automation",
+      "E-commerce",
+      "Data Analysis",
+      "Technical Support",
+      "Cross-Functional",
+      "Training"
+    ],
+    "postedDate": "2026-01-21 18:28:09",
+    "description": "As a Customer Success Manager at Siena, you will own a portfolio of customers and ensure they achieve specific, measurable outcomes. You will work at the intersection of customer, product, and engineering to drive real metrics and enhance customer experiences.",
+    "requirements": [
+      "3+ years in Customer Success Management or client-facing strategic roles",
+      "Proven track record with customer service technology platforms",
+      "Experience working closely with product and engineering teams",
+      "Comfort operating in fast-moving environments",
+      "Demonstrated ability to drive customer growth and retention",
+      "Experience in AI/ML space, particularly conversational AI",
+      "Hands-on prompt engineering experience",
+      "Comfort with API integrations and business intelligence tools"
+    ],
+    "benefits": [
+      "Meaningful impact on product and company",
+      "Globally distributed team",
+      "Great salary plus equity or stock grants",
+      "Learning budget for personal growth",
+      "Opportunity to build something new",
+      "AI-fluency development",
+      "Tackle unsolved problems"
+    ],
+    "url": "https://jobs.ashbyhq.com/siena/5097c4be-acc6-44d8-acbd-a69488e9796b?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    "featured": false,
+    "companyLogo": "siena.jpg"
   }
 ]
