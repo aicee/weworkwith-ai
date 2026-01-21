@@ -94,7 +94,7 @@
     "location": "Remote",
     "salary": "",
     "type": "Full-time",
-    "category": "Customer Success",
+    "category": "Support",
     "tags": [
       "Customer Success",
       "AI",
@@ -132,17 +132,30 @@
   },
   {
     "id": "mknw1ghsleq6",
-    "title": "Country Manager",
+    "title": "Country Manager - Germany",
     "company": "Cohere",
     "location": "Germany",
     "salary": "",
     "type": "",
-    "category": "",
-    "tags": [],
+    "category": "Operations",
+    "tags": [
+        "GTM Strategy",
+        "Sales",
+        "Revenue Growth"
+    ],
     "postedDate": "2026-01-21 18:36:34",
     "description": "The Country Manager - Germany will drive year-over-year revenue growth, developing & executing on customer and partner acquisition strategies in Germany.",
     "requirements": [],
-    "benefits": [],
+    "benefits": [
+      "An open and inclusive culture and work environment",
+      "Work closely with a team on the cutting edge of AI research",
+      "Weekly lunch stipend, in-office lunches & snacks",
+      "Full health and dental benefits, including a separate budget for mental health",
+      "100% Parental Leave top-up for up to 6 months",
+      "Personal enrichment benefits towards arts and culture, fitness and well-being, quality time, and workspace improvement",
+      "Remote-flexible, offices in Toronto, New York, San Francisco, London and Paris, as well as a co-working stipend",
+      "6 weeks of vacation (30 working days!)"
+    ],
     "url": "https://jobs.ashbyhq.com/cohere/922f67a4-da99-4d01-8a2f-8c5997c688df?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     "featured": false,
     "companyLogo": "cohere.png"
