@@ -107,5 +107,49 @@
     "url": "https://job-boards.greenhouse.io/dataiku/jobs/5677225004?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
     "featured": false,
     "companyLogo": "dataiku.png"
+  },
+  {
+    "id": "mknuqt4tokku",
+    "title": "Software Engineer, Atlas",
+    "company": "Cohere",
+    "location": "Remote",
+    "salary": "",
+    "type": "Full-time",
+    "category": "Engineering",
+    "tags": [
+      "Go",
+      "ETL",
+      "databases",
+      "search",
+      "retrieval",
+      "Kubernetes",
+      "React",
+      "AI"
+    ],
+    "postedDate": "2026-01-21 18:00:18",
+    "description": "As a Software Engineer on the team, you will build and ship features into North, our AI workspace platform, and collaborate closely with researchers to refine parsing strategies for effective search outcomes.",
+    "requirements": [
+      "Professional experience coding in Go",
+      "Experience with database migrations, ETL pipelines, and transforming raw data",
+      "Built personal or professional projects using search, retrievals, or vector databases",
+      "Strong coding abilities and comfortable working across the stack",
+      "Excited by the challenge of securely connecting users to their most relevant data",
+      "Nice to have: Experience with Kubernetes or React",
+      "Experience in both large enterprises and startups",
+      "Ability to excel in fast-paced environments"
+    ],
+    "benefits": [
+      "An open and inclusive culture and work environment",
+      "Work closely with a team on the cutting edge of AI research",
+      "Weekly lunch stipend, in-office lunches & snacks",
+      "Full health and dental benefits, including a budget for mental health",
+      "100% Parental Leave top-up for up to 6 months",
+      "Personal enrichment benefits towards arts and culture, fitness and well-being",
+      "Remote-flexible, offices in multiple cities, and a co-working stipend",
+      "6 weeks of vacation (30 working days)"
+    ],
+    "url": "https://jobs.ashbyhq.com/cohere/64fb905c-b3b4-4fcf-9e1c-a806c9c40068?utm_source=weworkwith-ai.com&utm_medium=jobboard&utm_campaign=joblisting",
+    "featured": false,
+    "companyLogo": "cohere.png"
   }
 ]
